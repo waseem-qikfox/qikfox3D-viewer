@@ -136,7 +136,7 @@
 #include "llexperiencecache.h"
 #include "lluiusage.h"
 
-// Firestorm includes
+// qikfox3D includes
 #include <boost/regex.hpp>
 #include "animationexplorer.h"      // <FS:Zi> Animation Explorer
 #include "fsareasearch.h"

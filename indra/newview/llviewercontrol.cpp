@@ -80,7 +80,7 @@
 //#include "llpanellogin.h"
 #include "fspanellogin.h"
 // </FS:Ansariel> [FS Login Panel]
-// <FS:Zi> We don't use the mini location panel in Firestorm
+// <FS:Zi> We don't use the mini location panel in qikfox3D
 // #include "llpaneltopinfobar.h"
 #include "llspellcheck.h"
 #include "llslurl.h"
@@ -92,7 +92,7 @@
 #include "rlvcommon.h"
 // [/RLVa:KB]
 
-// Firestorm inclues
+// qikfox3D inclues
 #include "fsfloatercontacts.h"
 #include "fsfloaterim.h"
 #include "fsfloaternearbychat.h"
@@ -1208,7 +1208,7 @@ LLPointer<LLControlVariable> setting_get_control(LLControlGroup& group, const st
     if (cntrl_ptr.isNull())
     {
         LL_ERRS() << "Unable to set up setting listener for " << setting
-            << ". Please reinstall viewer from  https://www.firestormviewer.org/choose-your-platform/ and contact https://www.firestormviewer.org/support if issue persists after reinstall."
+            << ". Please reinstall viewer from  https://www.qikfox3Dviewer.org/choose-your-platform/ and contact https://www.qikfox3Dviewer.org/support if issue persists after reinstall."
             << LL_ENDL;
     }
     return cntrl_ptr;

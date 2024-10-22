@@ -1,6 +1,6 @@
 /**
  * @file fsslurlcommand.cpp
- * @brief SLurl command handler for Firestorm commands
+ * @brief SLurl command handler for qikfox3D commands
  *
  * $LicenseInfo:firstyear=2012&license=viewerlgpl$
  * Copyright (c) 2012 Ansariel Hiller @ Second Life
@@ -19,8 +19,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * The Phoenix Firestorm Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
- * http://www.firestormviewer.org
+ * The Phoenix qikfox3D Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
+ * http://www.qikfox3Dviewer.org
  * $/LicenseInfo$
  */
 
@@ -44,7 +44,7 @@ class FSSlurlCommandHandler : public LLCommandHandler
 {
 public:
     // not allowed from outside the app
-    FSSlurlCommandHandler() : LLCommandHandler("firestorm", UNTRUSTED_BLOCK) { }
+    FSSlurlCommandHandler() : LLCommandHandler("qikfox3D", UNTRUSTED_BLOCK) { }
 
     bool handle(const LLSD& params, const LLSD& query_map, const std::string& grid, LLMediaCtrl* web)
     {

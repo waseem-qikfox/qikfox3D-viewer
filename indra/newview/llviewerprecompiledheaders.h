@@ -97,7 +97,7 @@
 // Library includes from llmessage project
 #include "llcachename.h"
 
-// Firestorm additions
+// qikfox3D additions
 #include "llavatarname.h"
 #include "llavatarnamecache.h"
 #include "llcorehttputil.h"

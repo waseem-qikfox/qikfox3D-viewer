@@ -597,7 +597,7 @@ bool LLFilePicker::getSaveFile(ESaveFilter filter, const std::string& filename, 
         mOFN.lpstrFilter = L"LSL Files (*.lsl)\0*.lsl\0" L"\0";
         break;
 
-// <Firestorm>
+// <qikfox3D>
     case FFSAVE_BEAM:
         if (filename.empty())
         {
@@ -626,7 +626,7 @@ bool LLFilePicker::getSaveFile(ESaveFilter filter, const std::string& filename, 
         L"Comma seperated values (*.csv)\0*.csv\0" \
         L"\0";
         break;
-// </Firestorm>
+// </qikfox3D>
     default:
         return false;
     }
@@ -1873,7 +1873,7 @@ bool LLFilePicker::openFileDialog( int32_t filter, bool blocking, EType aType )
                 break;
             // </FS:Zi>
 
-            // Firestorm additions
+            // qikfox3D additions
             case FFSAVE_BEAM:
                 file_type = "xml_file";
                 file_dialog_filter = "*.xml";
@@ -1970,7 +1970,7 @@ bool LLFilePicker::openFileDialog( int32_t filter, bool blocking, EType aType )
                 break;
             // </FS:Zi>
 
-            // Firestorm additions
+            // qikfox3D additions
             case FFLOAD_IMPORT:
                 file_type = "backup_files";
                 file_dialog_filter = "*.oxp";

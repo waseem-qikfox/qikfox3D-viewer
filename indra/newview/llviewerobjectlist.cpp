@@ -1962,7 +1962,7 @@ void LLViewerObjectList::renderObjectsForMap(LLNetMap &netmap)
     static const LLUIColor group_own_below_water_color =
                         LLUIColorTable::instance().getColor( "NetMapGroupOwnBelowWater" );
 
-// <FS:CR> FIRE-1846: Firestorm netmap enhancements
+// <FS:CR> FIRE-1846: qikfox3D netmap enhancements
     static const LLUIColor you_own_physical_color = LLUIColorTable::instance().getColor ( "NetMapYouPhysical", LLColor4::red );
     static const LLUIColor group_own_physical_color = LLUIColorTable::instance().getColor ( "NetMapGroupPhysical", LLColor4::green );
     static const LLUIColor other_own_physical_color = LLUIColorTable::instance().getColor ( "NetMapOtherPhysical", LLColor4::green );
@@ -2049,7 +2049,7 @@ void LLViewerObjectList::renderObjectsForMap(LLNetMap &netmap)
             color = below_water_color.get();
         }
 
-// <FS:CR> FIRE-1846: Firestorm netmap enhancements
+// <FS:CR> FIRE-1846: qikfox3D netmap enhancements
         if (fs_netmap_scripted && objectp->flagScripted())
         {
             color = scripted_object_color.get();

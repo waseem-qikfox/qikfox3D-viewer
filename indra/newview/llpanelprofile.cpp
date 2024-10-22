@@ -1386,7 +1386,7 @@ void LLPanelProfileSecondLife::fillAccountStatus(const LLAvatarData* avatar_data
     args["[PAYMENTINFO]"] = LLAvatarPropertiesProcessor::paymentInfo(avatar_data);
 
     // <FS:Ansariel> FSData support
-    args["[FIRESTORM]"] = "";
+    args["[qikfox3D]"] = "";
     args["[FSSUPP]"] = "";
     args["[FSDEV]"] = "";
     args["[FSQA]"] = "";
@@ -1398,7 +1398,7 @@ void LLPanelProfileSecondLife::fillAccountStatus(const LLAvatarData* avatar_data
         std::string text;
         if (flags & (FSData::DEVELOPER | FSData::SUPPORT | FSData::QA | FSData::GATEWAY))
         {
-            args["[FIRESTORM]"] = LLTrans::getString("APP_NAME");
+            args["[qikfox3D]"] = LLTrans::getString("APP_NAME");
         }
 
         if (flags & FSData::DEVELOPER)
@@ -1459,7 +1459,7 @@ void LLPanelProfileSecondLife::fillAccountStatus(const LLAvatarData* avatar_data
         //childSetVisible("partner_spacer_layout", false);
         setBadge("Profile_Badge_Linden", "BadgeLinden");
     }
-    // <FS:Ansariel> Add Firestorm team badge
+    // <FS:Ansariel> Add qikfox3D team badge
     else if (FSData::getInstance()->getAgentFlags(avatar_data->avatar_id) != -1)
     {
         setBadge("Profile_Badge_Team", "BadgeTeam");
@@ -1640,7 +1640,7 @@ void LLPanelProfileSecondLife::onImageLoaded(bool success, LLViewerFetchedTextur
     }
     else
     {
-        // assume 3:4, for sake of firestorm
+        // assume 3:4, for sake of qikfox3D
         // <FS:Ansariel> Fix LL UI/UX design accident
         //mSecondLifePicLayout->reshape(imageRect.getWidth(), imageRect.getWidth() * 3 / 4);
         mSecondLifePicLayout->reshape(imageRect.getHeight() * 4 / 3, imageRect.getHeight());

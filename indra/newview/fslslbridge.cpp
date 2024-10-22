@@ -3,8 +3,8 @@
  * @brief FSLSLBridge implementation
  *
  * $LicenseInfo:firstyear=2011&license=fsviewerlgpl$
- * Phoenix Firestorm Viewer Source Code
- * Copyright (C) 2011-2017, The Phoenix Firestorm Project, Inc.
+ * Phoenix qikfox3D Viewer Source Code
+ * Copyright (C) 2011-2017, The Phoenix qikfox3D Project, Inc.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,8 +20,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * The Phoenix Firestorm Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
- * http://www.firestormviewer.org
+ * The Phoenix qikfox3D Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
+ * http://www.qikfox3Dviewer.org
  * $/LicenseInfo$
  */
 
@@ -1488,7 +1488,7 @@ bool FSLSLBridge::isItemAttached(const LLUUID& iID)
 
 void FSLSLBridge::setupFSCategory(inventory_func_type callback)
 {
-    if (LLUUID fsCatID = gInventory.findCategoryByName(ROOT_FIRESTORM_FOLDER); !fsCatID.isNull())
+    if (LLUUID fsCatID = gInventory.findCategoryByName(ROOT_qikfox3D_FOLDER); !fsCatID.isNull())
     {
         LLInventoryModel::item_array_t* items;
         LLInventoryModel::cat_array_t* cats;
@@ -1514,7 +1514,7 @@ void FSLSLBridge::setupFSCategory(inventory_func_type callback)
     }
     else
     {
-        gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_FIRESTORM_FOLDER, [this, callback](const LLUUID& new_cat_id)
+        gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_qikfox3D_FOLDER, [this, callback](const LLUUID& new_cat_id)
             {
                 gInventory.createNewCategory(new_cat_id, LLFolderType::FT_NONE, FS_BRIDGE_FOLDER, [this, callback](const LLUUID& new_cat_id)
                     {
@@ -1538,7 +1538,7 @@ LLUUID FSLSLBridge::findFSCategory()
         return mBridgeFolderID;
     }
 
-    if (LLUUID fsCatID = gInventory.findCategoryByName(ROOT_FIRESTORM_FOLDER); !fsCatID.isNull())
+    if (LLUUID fsCatID = gInventory.findCategoryByName(ROOT_qikfox3D_FOLDER); !fsCatID.isNull())
     {
         LLInventoryModel::item_array_t* items;
         LLInventoryModel::cat_array_t* cats;

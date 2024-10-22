@@ -141,7 +141,7 @@
 #include "llmoveview.h"
 #include "llnavigationbar.h"
 #include "llnotificationhandler.h"
-// <FS:Zi> We don't use the mini location panel in Firestorm
+// <FS:Zi> We don't use the mini location panel in qikfox3D
 // #include "llpaneltopinfobar.h"
 #include "llpopupview.h"
 #include "llpreviewtexture.h"
@@ -224,7 +224,7 @@
 // </FS:Ansariel> [FS communication UI]
 #include "llwindowlistener.h"
 #include "llviewerwindowlistener.h"
-// <FS:Zi> We don't use the mini location panel in Firestorm
+// <FS:Zi> We don't use the mini location panel in qikfox3D
 // #include "llpaneltopinfobar.h"
 #include "llcleanup.h"
 #include "llimview.h"
@@ -5066,7 +5066,7 @@ void renderOnePhysicsShape(LLViewerObject* objectp)
     }
 
 }
-// End Firestorm additions that add the ability to visualise the physics shape in edit mode.
+// End qikfox3D additions that add the ability to visualise the physics shape in edit mode.
 //</FS:Beq> Physics display in edit mode changes
 
 
@@ -7322,7 +7322,7 @@ void LLViewerWindow::setUIVisibility(bool visible)
 
     // <FS:Zi> Is done inside XUI now, using visibility_control
     //LLNavigationBar::getInstance()->setVisible(visible ? gSavedSettings.getBOOL("ShowNavbarNavigationPanel") : false);
-    // <FS:Zi> We don't use the mini location panel in Firestorm
+    // <FS:Zi> We don't use the mini location panel in qikfox3D
     // LLPanelTopInfoBar::getInstance()->setVisible(visible? gSavedSettings.getBOOL("ShowMiniLocationPanel") : false);
     mStatusBarContainer->setVisible(visible);
 

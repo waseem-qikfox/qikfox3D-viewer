@@ -115,7 +115,7 @@ jobs:
       - name: Determine tag
         id: get_tag
         run: |
-          TAG_NAME="Firestorm_${{ steps.get_inputs.outputs.release_type }}_${{ steps.get_inputs.outputs.viewer_version }}.${{ steps.get_inputs.outputs.viewer_build }}"
+          TAG_NAME="qikfox3D_${{ steps.get_inputs.outputs.release_type }}_${{ steps.get_inputs.outputs.viewer_version }}.${{ steps.get_inputs.outputs.viewer_build }}"
           echo "Proposed Tag: $TAG_NAME"
           echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
 

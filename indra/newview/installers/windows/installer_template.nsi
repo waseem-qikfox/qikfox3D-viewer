@@ -105,7 +105,7 @@ SetOverwrite on							# Overwrite files by default
 #AutoCloseWindow true					# After all files install, close window
 
 # Registry key paths, ours and Microsoft's
-!define LINDEN_KEY      "SOFTWARE\The Phoenix Firestorm Project"
+!define LINDEN_KEY      "SOFTWARE\The Phoenix qikfox3D Project"
 !define INSTNAME_KEY    "${LINDEN_KEY}\${INSTNAME}"
 !define MSCURRVER_KEY   "SOFTWARE\Microsoft\Windows\CurrentVersion"
 !define MSNTCURRVER_KEY "SOFTWARE\Microsoft\Windows NT\CurrentVersion"
@@ -568,11 +568,11 @@ CreateShortCut "$INSTDIR\Uninstall $INSTSHORTCUT.lnk" \
 				'"$INSTDIR\uninst.exe"' ''
 
 # Write registry
-WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "" "$INSTDIR"
+WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "qikfox3D" "$INSTDIR"
 WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Version" "${VERSION_LONG}"
 WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Shortcut" "$INSTSHORTCUT"
 WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Exe" "$VIEWER_EXE"
-WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "Publisher" "The Phoenix Firestorm Project, Inc."
+WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "Publisher" "The Phoenix qikfox3D Project, Inc."
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLInfoAbout" "https://www.firestormviewer.org"
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLUpdateInfo" "https://www.firestormviewer.org/downloads"
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "HelpLink" "https://www.firestormviewer.org/support"
@@ -906,28 +906,28 @@ Push $2
 # Required since ProfileImagePath is of type REG_EXPAND_SZ
     ExpandEnvStrings $2 $2
 
-# Delete files in \Users\<User>\AppData\Roaming\Firestorm
+# Delete files in \Users\<User>\AppData\Roaming\qikfox3D
 # Remove all settings files but leave any other .txt files to preserve the chat logs
-    RMDir /r "$2\AppData\Roaming\Firestorm\logs"
-    RMDir /r "$2\AppData\Roaming\Firestorm\browser_profile"
-    RMDir /r "$2\AppData\Roaming\Firestorm\user_settings"
-    Delete  "$2\AppData\Roaming\Firestorm\*.xml"
-    Delete  "$2\AppData\Roaming\Firestorm\*.bmp"
-    Delete  "$2\AppData\Roaming\Firestorm\search_history.txt"
-    Delete  "$2\AppData\Roaming\Firestorm\plugin_cookies.txt"
-    Delete  "$2\AppData\Roaming\Firestorm\typed_locations.txt"
-# Delete files in \Users\<User>\AppData\Local\Firestorm
+    RMDir /r "$2\AppData\Roaming\qikfox3D\logs"
+    RMDir /r "$2\AppData\Roaming\qikfox3D\browser_profile"
+    RMDir /r "$2\AppData\Roaming\qikfox3D\user_settings"
+    Delete  "$2\AppData\Roaming\qikfox3D\*.xml"
+    Delete  "$2\AppData\Roaming\qikfox3D\*.bmp"
+    Delete  "$2\AppData\Roaming\qikfox3D\search_history.txt"
+    Delete  "$2\AppData\Roaming\qikfox3D\plugin_cookies.txt"
+    Delete  "$2\AppData\Roaming\qikfox3D\typed_locations.txt"
+# Delete files in \Users\<User>\AppData\Local\qikfox3D
     ${If} ${ISOPENSIM} == "0"
         ${If} ${IS64BIT} == "0"
-            RMDir /r "$2\AppData\Local\Firestorm"				#Delete the Havok cache folder
+            RMDir /r "$2\AppData\Local\qikfox3D"				#Delete the Havok cache folder
         ${Else}
-            RMDir /r "$2\AppData\Local\Firestorm_x64"			#Delete the OpenSim cache folder
+            RMDir /r "$2\AppData\Local\qikfox3D_x64"			#Delete the OpenSim cache folder
         ${EndIf}
     ${Else}
         ${If} ${IS64BIT} == "0"
-            RMDir /r "$2\AppData\Local\FirestormOS"			#Delete the Havok cache folder
+            RMDir /r "$2\AppData\Local\qikfox3DOS"			#Delete the Havok cache folder
         ${Else}
-            RMDir /r "$2\AppData\Local\FirestormOS_x64"		#Delete the OpenSim cache folder
+            RMDir /r "$2\AppData\Local\qikfox3DOS_x64"		#Delete the OpenSim cache folder
         ${EndIf}
     ${EndIf}
 
@@ -940,11 +940,11 @@ Pop $2
 Pop $1
 Pop $0
 
-# Delete files in ProgramData\Firestorm
+# Delete files in ProgramData\qikfox3D
 Push $0
   ReadRegStr $0 SHELL_CONTEXT "${MSCURRVER_KEY}\Explorer\Shell Folders" "Common AppData"
   StrCmp $0 "" +2
-  RMDir /r "$0\Firestorm"
+  RMDir /r "$0\qikfox3D"
 Pop $0
 
 Keep:

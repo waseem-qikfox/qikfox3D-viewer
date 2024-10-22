@@ -1647,7 +1647,7 @@ bool LLAppViewer::doFrame()
         }
 #endif
 // </FS:Beq>
-        nd::etw::logFrame(); // <FS:ND> Write the start of each frame. Even if our Provider (Firestorm) would be enabled, this has only light impact. Does nothing on OSX and Linux.
+        nd::etw::logFrame(); // <FS:ND> Write the start of each frame. Even if our Provider (qikfox3D) would be enabled, this has only light impact. Does nothing on OSX and Linux.
         {
             LL_PROFILE_ZONE_NAMED_CATEGORY_APP("df LLTrace");
             if (LLFloaterReg::instanceVisible("block_timers"))
@@ -2316,7 +2316,7 @@ bool LLAppViewer::cleanup()
 
     LLUIColorTable::instance().saveUserSettings();
 
-//<Firestorm Skin Cleanup>
+//<qikfox3D Skin Cleanup>
     std::string skinSaved = gSavedSettings.getString("SkinCurrent");
     std::string themeSaved = gSavedSettings.getString("SkinCurrentTheme");
     if ((skinSaved != mCurrentSkin) || (themeSaved != mCurrentSkinTheme))
@@ -2326,7 +2326,7 @@ bool LLAppViewer::cleanup()
         LLUIColorTable::instance().saveUserSettingsPaletteOnly();
 
     }
-//</Firestorm Skip Cleanup>
+//</qikfox3D Skip Cleanup>
     }   // <FS:Zi> Backup Settings
 
 
@@ -2667,7 +2667,7 @@ void errorCallback(LLError::ELevel level, const std::string &error_string)
 
         if (error_display_string.find("MissingString(") != std::string::npos)
         {
-            error_display_string = "We are sorry, but Firestorm has crashed and needs to be closed. If you see this issue happening repeatedly, please contact our support team and submit the following message:\n\n[ERROR_DETAILS]";
+            error_display_string = "We are sorry, but qikfox3D has crashed and needs to be closed. If you see this issue happening repeatedly, please contact our support team and submit the following message:\n\n[ERROR_DETAILS]";
             LLStringUtil::format(error_display_string, map);
         }
         if (caption.find("MissingString(") != std::string::npos)
@@ -2968,15 +2968,15 @@ bool LLAppViewer::initConfiguration()
         if (gDirUtilp->fileExists(settings_file_list))
         {
             LL_ERRS() << "Cannot load default configuration file settings_files.xml. "
-                << "Please reinstall viewer from https://www.firestormviewer.org/choose-your-platform/ "
-                << "and contact https://www.firestormviewer.org/support if issue persists after reinstall."
+                << "Please reinstall viewer from https://www.qikfox3Dviewer.org/choose-your-platform/ "
+                << "and contact https://www.qikfox3Dviewer.org/support if issue persists after reinstall."
                 << LL_ENDL;
         }
         else
         {
             LL_ERRS() << "Default configuration file settings_files.xml not found. "
-                << "Please reinstall viewer from https://www.firestormviewer.org/choose-your-platform/ "
-                << "and contact https://www.firestormviewer.org/support if issue persists after reinstall."
+                << "Please reinstall viewer from https://www.qikfox3Dviewer.org/choose-your-platform/ "
+                << "and contact https://www.qikfox3Dviewer.org/support if issue persists after reinstall."
                 << LL_ENDL;
         }
     }
@@ -3119,7 +3119,7 @@ bool LLAppViewer::initConfiguration()
         // <FS>
         if (gSavedSettings.getString("SessionSettingsFile").empty())
         {
-            gSavedSettings.setString("SessionSettingsFile", "settings_firestorm.xml");
+            gSavedSettings.setString("SessionSettingsFile", "settings_qikfox3D.xml");
         }
         // </FS>
 
@@ -3177,7 +3177,7 @@ bool LLAppViewer::initConfiguration()
 
     loadSettingsFromDirectory("UserSession");
 
-    // <FS:AO> Re-read user settings again. This is a Firestorm hack to get user settings to override modes
+    // <FS:AO> Re-read user settings again. This is a qikfox3D hack to get user settings to override modes
     //Todo, find a cleaner way of doing this via the various set_default arguments.
     loadSettingsFromDirectory("User");
 
@@ -3460,10 +3460,10 @@ bool LLAppViewer::initConfiguration()
     // crash as this dialog is always frontmost.
     std::string splash_msg;
     LLStringUtil::format_map_t args;
-    //<FS:AW set the APP_NAME to Firestorm instead of the grid connected to>
+    //<FS:AW set the APP_NAME to qikfox3D instead of the grid connected to>
     // //args["[APP_NAME]"] = LLTrans::getString("SECOND_LIFE");
     args["[APP_NAME]"] =  LLTrans::getString("APP_NAME");
-    //<FS:AW set the APP_NAME to Firestorm instead of the grid connected to>
+    //<FS:AW set the APP_NAME to qikfox3D instead of the grid connected to>
     splash_msg = LLTrans::getString("StartupLoading", args);
     LLSplashScreen::show();
     LLSplashScreen::update(splash_msg);
@@ -3587,8 +3587,8 @@ void LLAppViewer::initStrings()
         gDirUtilp->dumpCurrentDirectories(LLError::LEVEL_WARN);
         LLError::LLUserWarningMsg::showMissingFiles();
         LL_ERRS() << "Viewer failed to find localization and UI files."
-            << " Please reinstall viewer from https://www.firestormviewer.org/downloads"
-            << " and contact https://www.firestormviewer.org/support if issue persists after reinstall." << LL_ENDL;
+            << " Please reinstall viewer from https://www.qikfox3Dviewer.org/downloads"
+            << " and contact https://www.qikfox3Dviewer.org/support if issue persists after reinstall." << LL_ENDL;
     }
     LLTransUtil::parseStrings(strings_file, default_trans_args);
     LLTransUtil::parseLanguageStrings("language_settings.xml");
@@ -3905,7 +3905,7 @@ LLSD LLAppViewer::getViewerInfo() const
 
     // return a URL to the release notes for this viewer, such as:
     // https://releasenotes.secondlife.com/viewer/2.1.0.123456.html
-    // <FS:Ansariel> FIRE-13993: Create URL in the form of https://wiki.firestormviewer.org/firestorm_change_log_x.y.z.rev
+    // <FS:Ansariel> FIRE-13993: Create URL in the form of https://wiki.qikfox3Dviewer.org/qikfox3D_change_log_x.y.z.rev
     //std::string url = versionInfo.getReleaseNotes(); // VVM supplied
     //if (url.empty())
     //{
@@ -4328,7 +4328,7 @@ void LLAppViewer::writeSystemInfo()
     if (! gDebugInfo.has("Dynamic") )
         gDebugInfo["Dynamic"] = LLSD::emptyMap();
 
-    // <FS:ND> we don't want this (otherwise set filename to Firestorm.old/log
+    // <FS:ND> we don't want this (otherwise set filename to qikfox3D.old/log
 // #if LL_WINDOWS && !LL_BUGSPLAT
 //  gDebugInfo["SLLog"] = gDirUtilp->getExpandedFilename(LL_PATH_DUMP,"SecondLife.log");
 // #else
@@ -5305,7 +5305,7 @@ void LLAppViewer::badNetworkHandler()
         "the issue. \n"
         " \n"
         "If the problem continues, see the Tech Support FAQ at: \n"
-        "www.firestormviewer.org/support";
+        "www.qikfox3Dviewer.org/support";
     forceDisconnect(message.str());
 
     LLApp::instance()->writeMiniDump();
@@ -6307,7 +6307,7 @@ void LLAppViewer::disconnectViewer()
         gFloaterView->restoreAll();
     }
 
-    // <FS:Ansariel> Firestorm radar: Shutdown radar
+    // <FS:Ansariel> qikfox3D radar: Shutdown radar
     if (FSRadar::instanceExists())
     {
         FSRadar::deleteSingleton();

@@ -6,7 +6,7 @@
 	<string name="CaptionTextAcctInfo">
 [ACCTTYPE]
 [PAYMENTINFO]
-[FSDEV][FSSUPP][FSQA][FSGW][FIRESTORM]
+[FSDEV][FSSUPP][FSQA][FSGW][qikfox3D]
 	</string>
 	<string name="BadgeBeta" value="Beta Tester originale" />
 	<string name="BadgeBetaLifetime" value="Membro a vita Beta" />

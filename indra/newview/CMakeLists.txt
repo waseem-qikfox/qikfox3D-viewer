@@ -882,7 +882,7 @@ else (OPENSIM)
         )
 endif (OPENSIM)
 
-set(VIEWER_BINARY_NAME "firestorm-bin" CACHE STRING
+set(VIEWER_BINARY_NAME "qikfox3D-bin" CACHE STRING
     "The name of the viewer executable to create.")
 
 set(viewer_HEADER_FILES
@@ -1767,8 +1767,8 @@ if (DARWIN)
   # Add resource files to the project.
   set(viewer_RESOURCE_FILES
     firestorm_icon.icns
-    Info-Firestorm.plist
-    Firestorm.xib/
+    Info-qikfox3D.plist
+    qikfox3D.xib/
     # CMake doesn't seem to support Xcode language variants well just yet
     English.lproj/InfoPlist.strings
     English.lproj/language.txt
@@ -2092,7 +2092,7 @@ set_source_files_properties(${viewer_CHARACTER_FILES}
                             PROPERTIES HEADER_FILE_ONLY TRUE)
 list(APPEND viewer_SOURCE_FILES ${viewer_CHARACTER_FILES})
 
-# <FS:Ansariel> Add Firestorm folders
+# <FS:Ansariel> Add qikfox3D folders
 file(GLOB viewer_FONT_FILES fonts/*.xml)
 source_group("Fonts" FILES ${viewer_FONT_FILES})
 set_source_files_properties(${viewer_FONT_FILES}
@@ -2100,7 +2100,7 @@ set_source_files_properties(${viewer_FONT_FILES}
 list(APPEND viewer_SOURCE_FILES ${viewer_FONT_FILES})
 
 file(GLOB viewer_FS_RESOURCES fs_resources/*)
-source_group("Firestorm Resources" FILES ${viewer_FS_RESOURCES})
+source_group("qikfox3D Resources" FILES ${viewer_FS_RESOURCES})
 set_source_files_properties(${viewer_FS_RESOURCES}
                             PROPERTIES HEADER_FILE_ONLY TRUE)
 list(APPEND viewer_SOURCE_FILES ${viewer_FS_RESOURCES})
@@ -2477,7 +2477,7 @@ set(ARTWORK_DIR ${CMAKE_CURRENT_SOURCE_DIR} CACHE PATH
 # </FS:Ansariel>
 
 if (LINUX)
-  set(product Firestorm-${ARCH}-${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION})
+  set(product qikfox3D-${ARCH}-${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION})
 
   # These are the generated targets that are copied to package/
   set(COPY_INPUT_DEPENDENCIES
@@ -2573,17 +2573,17 @@ if (DARWIN)
   # magically known to CMake -- it's that these names are referenced in the
   # Info-SecondLife.plist file in the configure_file() directive below.
   #set(product "${VIEWER_CHANNEL}")
-  set(product "Firestorm")
-  set(MACOSX_EXECUTABLE_NAME "Firestorm")
-  set(MACOSX_BUNDLE_INFO_STRING "Firestorm Viewer")
+  set(product "qikfox3D")
+  set(MACOSX_EXECUTABLE_NAME "qikfox3D")
+  set(MACOSX_BUNDLE_INFO_STRING "qikfox3D Viewer")
   set(MACOSX_BUNDLE_ICON_FILE "firestorm_icon.icns")
-  set(MACOSX_BUNDLE_GUI_IDENTIFIER "org.firestormviewer.firestorm")
+  set(MACOSX_BUNDLE_GUI_IDENTIFIER "org.qikfox3Dviewer.qikfox3D")
   set(MACOSX_BUNDLE_LONG_VERSION_STRING "${VIEWER_CHANNEL} ${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION}")
-  set(MACOSX_BUNDLE_BUNDLE_NAME "Firestorm")
+  set(MACOSX_BUNDLE_BUNDLE_NAME "qikfox3D")
   set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION}")
   set(MACOSX_BUNDLE_BUNDLE_VERSION "${VIEWER_SHORT_VERSION}${VIEWER_MACOSX_PHASE}${VIEWER_REVISION}")
-  set(MACOSX_BUNDLE_COPYRIGHT "Copyright 2010-2024 The Phoenix Firestorm Project, Inc.")
-  set(MACOSX_BUNDLE_NSMAIN_NIB_FILE "Firestorm.nib")
+  set(MACOSX_BUNDLE_COPYRIGHT "Copyright 2010-2024 The Phoenix qikfox3D Project, Inc.")
+  set(MACOSX_BUNDLE_NSMAIN_NIB_FILE "qikfox3D.nib")
   set(MACOSX_BUNDLE_NSPRINCIPAL_CLASS "LLApplication")
 
   # https://blog.kitware.com/upcoming-in-cmake-2-8-12-osx-rpath-support/
@@ -2598,7 +2598,7 @@ if (DARWIN)
     # SIGH, as of 2018-05-24 (cmake 3.11.1) the INSTALL_RPATH property simply
     # does not work. Try this:
     LINK_FLAGS "-rpath @loader_path/../Frameworks"
-    MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Info-Firestorm.plist"
+    MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Info-qikfox3D.plist"
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER "${MACOSX_BUNDLE_GUI_IDENTIFIER}"
     )
 
@@ -2608,9 +2608,9 @@ if (DARWIN)
   set(VIEWER_APP_XCARCHIVE "${VIEWER_APP_BUNDLE}/../${product}.xcarchive.zip")
 
   configure_file(
-     # <FS:CR> Use Firestorm plist
+     # <FS:CR> Use qikfox3D plist
      #"${CMAKE_CURRENT_SOURCE_DIR}/Info-SecondLife.plist"
-     "${CMAKE_CURRENT_SOURCE_DIR}/Info-Firestorm.plist"
+     "${CMAKE_CURRENT_SOURCE_DIR}/Info-qikfox3D.plist"
      "${VIEWER_APP_BUNDLE}/Contents/Info.plist"
     )
 

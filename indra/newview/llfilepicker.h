@@ -98,7 +98,7 @@ public:
         FFLOAD_MATERIAL_TEXTURE = 16,
         FFLOAD_HDRI = 17,
 
-        // Firestorm additions
+        // qikfox3D additions
         FFLOAD_IMPORT = 50
     };
 
@@ -120,7 +120,7 @@ public:
         FFSAVE_SCRIPT = 15,
         FFSAVE_TGAPNG = 16,
 
-        // Firestorm additions
+        // qikfox3D additions
         FFSAVE_BEAM = 50,
         FFSAVE_EXPORT = 51,
         FFSAVE_CSV = 52

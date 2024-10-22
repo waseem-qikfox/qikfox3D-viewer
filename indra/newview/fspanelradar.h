@@ -1,6 +1,6 @@
 /**
  * @file fspanelradar.h
- * @brief Firestorm radar panel implementation
+ * @brief qikfox3D radar panel implementation
  *
  * $LicenseInfo:firstyear=2013&license=viewerlgpl$
  * Copyright (c) 2013 Ansariel Hiller @ Second Life
@@ -19,8 +19,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * The Phoenix Firestorm Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
- * http://www.firestormviewer.org
+ * The Phoenix qikfox3D Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
+ * http://www.qikfox3Dviewer.org
  * $/LicenseInfo$
  */
 

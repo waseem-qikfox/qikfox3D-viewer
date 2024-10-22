@@ -270,15 +270,15 @@
 		<menu_item_check label="L$-Markt-Kurse" name="LindenXchange"/>
 		<menu_item_check label="Skript-Datenbank" name="Script Library"/>
 		<menu_item_call label="SL-Community (Blogs, Foren, News)" name="SL Community Pages"/>
-		<menu_item_call label="Nachricht des Tages" name="Firestorm MoTD"/>
+		<menu_item_call label="Nachricht des Tages" name="qikfox3D MoTD"/>
 	</menu>
 	<menu label="Hilfe" name="Help">
 		<menu_item_check label="Hinweise aktivieren" name="Enable Hints"/>
-		<menu_item_call label="Firestorm-Wiki" name="Firestorm Wiki"/>
+		<menu_item_call label="qikfox3D-Wiki" name="qikfox3D Wiki"/>
 		<menu_item_call label="Fehlerbehebung" name="Troubleshooting"/>
-		<menu_item_call label="Firestorm Support-Gruppe beitreten" name="firestorm_support_group"/>
-		<menu_item_call label="Stundenplan Firestorm-Klassen" name="Firestorm Classes Schedule"/>
-		<menu_item_call label="Firestorm-Eventkalender" name="Firestorm Events Calendar"/>
+		<menu_item_call label="qikfox3D Support-Gruppe beitreten" name="qikfox3D_support_group"/>
+		<menu_item_call label="Stundenplan qikfox3D-Klassen" name="qikfox3D Classes Schedule"/>
+		<menu_item_call label="qikfox3D-Eventkalender" name="qikfox3D Events Calendar"/>
 		<menu_item_check label="Anweisungen..." name="How To"/>
 		<menu_item_call label="[CURRENT_GRID]-Hilfe" name="current_grid_help"/>
 		<menu_item_call label="Über [CURRENT_GRID]" name="current_grid_about"/>

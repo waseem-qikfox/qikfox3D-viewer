@@ -1,6 +1,6 @@
 /* Localized versions of Info.plist keys */
 
-CFBundleName = "Firestorm";
+CFBundleName = "qikfox3D";
 
-CFBundleShortVersionString = "Firestorm version %%VERSION%%";
-CFBundleGetInfoString = "Firestorm version %%VERSION%%, Copyright 2010-2024 The Phoenix Firestorm Project, Inc.";
+CFBundleShortVersionString = "qikfox3D version %%VERSION%%";
+CFBundleGetInfoString = "qikfox3D version %%VERSION%%, Copyright 2010-2024 The Phoenix qikfox3D Project, Inc.";

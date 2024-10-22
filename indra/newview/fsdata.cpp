@@ -3,7 +3,7 @@
  * @brief Downloadable dymatic xml data for viewer features.
  *
  * $LicenseInfo:firstyear=2013&license=viewerlgpl$
- * Phoenix Firestorm Viewer Source Code
+ * Phoenix qikfox3D Viewer Source Code
  * Copyright (C) 2011-2013 Techwolf Lupindo
  * Portions Copyright (C)
  *   2011 Wolfspirit Magic
@@ -23,8 +23,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * The Phoenix Firestorm Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
- * http://www.firestormviewer.org
+ * The Phoenix qikfox3D Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
+ * http://www.qikfox3Dviewer.org
  * $/LicenseInfo$
  */
 
@@ -833,7 +833,7 @@ LLSD FSData::allowedLogin() const
     }
 }
 
-bool FSData::isFirestormGroup(const LLUUID& id) const
+bool FSData::isqikfox3DGroup(const LLUUID& id) const
 {
     return isSupportGroup(id) || isTestingGroup(id);
 }
@@ -930,7 +930,7 @@ std::string FSData::processRequestForInfo(const LLUUID& requester, const std::st
     LLSD args;
     args["REASON"] = reason;
     args["NAME"] = name;
-    LLNotifications::instance().add("FireStormReqInfo", args, LLSD().with("from_id", requester).with("session_id", sessionid), callbackReqInfo);
+    LLNotifications::instance().add("qikfox3DReqInfo", args, LLSD().with("from_id", requester).with("session_id", sessionid), callbackReqInfo);
 
     return outmessage;
 }

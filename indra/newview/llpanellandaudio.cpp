@@ -50,7 +50,7 @@
 #include "roles_constants.h"
 #include "llscrolllistctrl.h"
 
-// Firestorm includes
+// qikfox3D includes
 #include "llviewercontrol.h"    // <FS:CR> FIRE-593 - Needed for gSavedSettings where we store our media list
 #include "llclipboard.h"
 

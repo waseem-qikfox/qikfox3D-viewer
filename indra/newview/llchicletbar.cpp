@@ -29,12 +29,12 @@
 
 #include "llchiclet.h"
 #include "lllayoutstack.h"
-// <FS:Zi> We don't use the mini location panel in Firestorm
+// <FS:Zi> We don't use the mini location panel in qikfox3D
 // #include "llpaneltopinfobar.h"
 #include "llsyswellwindow.h"
 #include "llfloaternotificationstabbed.h"
 
-// Firestorm includes
+// qikfox3D includes
 #include "fsfloaterim.h"
 #include "llfloaterreg.h"
 
@@ -323,7 +323,7 @@ S32 LLChicletBar::getChicletPanelShrinkHeadroom() const
 
 void LLChicletBar::fitWithTopInfoBar()
 {
-    // <FS:Zi> We don't use the mini location panel in Firestorm
+    // <FS:Zi> We don't use the mini location panel in qikfox3D
     #if 0
     LLPanelTopInfoBar& top_info_bar = LLPanelTopInfoBar::instance();
 

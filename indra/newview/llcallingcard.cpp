@@ -50,7 +50,7 @@
 #include "llavataractions.h"
 #include "lluiusage.h"
 
-// Firestorm includes
+// qikfox3D includes
 #include "fscommon.h"
 #include "fsfloaternearbychat.h"
 #include "fskeywords.h"

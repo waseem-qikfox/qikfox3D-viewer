@@ -49,7 +49,7 @@ class LLStreamingAudioInterface
     virtual bool supportsAdjustableBufferSizes(){return false;}
     virtual void setBufferSizes(U32 streambuffertime, U32 decodebuffertime){};
 
-    // These three are Firestorm additions and thus optional.
+    // These three are qikfox3D additions and thus optional.
     using metadata_update_callback_t = boost::signals2::signal<void(const LLSD& metadata)>;
     virtual boost::signals2::connection setMetadataUpdateCallback(const metadata_update_callback_t::slot_type& cb) noexcept
     {

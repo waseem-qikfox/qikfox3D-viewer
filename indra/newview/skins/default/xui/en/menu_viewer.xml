@@ -2429,49 +2429,49 @@
        </menu_item_call>
        <menu_item_separator/>
     	<menu_item_call
-             label="Firestorm Blog"
-             name="Firestorm Blog">
+             label="qikfox3D Blog"
+             name="qikfox3D Blog">
              <menu_item_call.on_click
              function="PromptShowURL"
-             name="firestorm_blog_url"
-             parameter="WebLaunchExternalTarget,https://www.firestormviewer.org/" />
+             name="qikfox3D_blog_url"
+             parameter="WebLaunchExternalTarget,https://www.qikfox3Dviewer.org/" />
        </menu_item_call>
     	<menu_item_call
-             label="Firestorm Flickr"
-             name="Firestorm Flickr">
+             label="qikfox3D Flickr"
+             name="qikfox3D Flickr">
              <menu_item_call.on_click
              function="PromptShowURL"
-             name="firestorm_flickr_url"
-             parameter="WebLaunchExternalTarget,http://www.flickr.com/groups/firestormviewer/pool/" />
+             name="qikfox3D_flickr_url"
+             parameter="WebLaunchExternalTarget,http://www.flickr.com/groups/qikfox3Dviewer/pool/" />
        </menu_item_call>
     	<menu_item_call
-             label="Firestorm YouTube"
-             name="Firestorm YouTube">
+             label="qikfox3D YouTube"
+             name="qikfox3D YouTube">
              <menu_item_call.on_click
              function="PromptShowURL"
-             name="firestorm_youtube_url"
+             name="qikfox3D_youtube_url"
              parameter="WebLaunchExternalTarget,http://www.youtube.com/user/PhoenixViewerSL" />
        </menu_item_call>
     	<menu_item_call
-             label="Firestorm Twitter"
-             name="Firestorm Twitter">
+             label="qikfox3D Twitter"
+             name="qikfox3D Twitter">
              <menu_item_call.on_click
              function="PromptShowURL"
-             name="firestorm_twitter_url"
+             name="qikfox3D_twitter_url"
              parameter="WebLaunchExternalTarget,https://twitter.com/phoenixviewersl" />
        </menu_item_call>
     	<menu_item_call
-             label="Firestorm Plurk"
-             name="Firestorm Plurk">
+             label="qikfox3D Plurk"
+             name="qikfox3D Plurk">
              <menu_item_call.on_click
              function="PromptShowURL"
-             name="firestorm_plurk_url"
+             name="qikfox3D_plurk_url"
              parameter="WebLaunchExternalTarget,http://www.plurk.com/ThePhoenixViewerProject" />
        </menu_item_call>
        <menu_item_separator/>
        <menu_item_call
              label="Message of the day"
-             name="Firestorm MoTD">
+             name="qikfox3D MoTD">
              <menu_item_call.on_click
              function="Advanced.ToggleHUDInfo"
              parameter="motd" />
@@ -2497,13 +2497,13 @@
         </menu_item_check>
         
         <menu_item_call
-         label="Firestorm Wiki"
-         name="Firestorm Wiki"
+         label="qikfox3D Wiki"
+         name="qikfox3D Wiki"
 	     shortcut="F1">
              <menu_item_call.on_click
              function="PromptShowURL"
              name="script_library_url"
-             parameter="WebLaunchExternalTarget,https://wiki.firestormviewer.org" />
+             parameter="WebLaunchExternalTarget,https://wiki.qikfox3Dviewer.org" />
         </menu_item_call>
         
         <menu_item_call
@@ -2512,32 +2512,32 @@
             <menu_item_call.on_click
              function="PromptShowURL"
              name="wiki_troubleshooting_url"
-             parameter="WebLaunchExternalTarget,https://wiki.firestormviewer.org/firestorm_troubleshooting" />
+             parameter="WebLaunchExternalTarget,https://wiki.qikfox3Dviewer.org/qikfox3D_troubleshooting" />
         </menu_item_call>
 	   
         <menu_item_call
-         label="Join Firestorm Support Group"
-         name="firestorm_support_group">
+         label="Join qikfox3D Support Group"
+         name="qikfox3D_support_group">
             <menu_item_call.on_click
              function="Advanced.WebBrowserTest"
-             parameter="https://wiki.firestormviewer.org/firestorm_support_groups_join" />
+             parameter="https://wiki.qikfox3Dviewer.org/qikfox3D_support_groups_join" />
             <menu_item_call.on_visible
              function="GridCheck"
              parameter="secondlife" />
         </menu_item_call>
 
         <menu_item_call
-         label="Firestorm Classes Schedule"
-         name="Firestorm Classes Schedule">
+         label="qikfox3D Classes Schedule"
+         name="qikfox3D Classes Schedule">
              <menu_item_call.on_click
              function="PromptShowURL"
              name="wiki_classes_url"
-             parameter="WebLaunchExternalTarget,https://wiki.firestormviewer.org/firestorm_classes" />
+             parameter="WebLaunchExternalTarget,https://wiki.qikfox3Dviewer.org/qikfox3D_classes" />
         </menu_item_call>
 
         <menu_item_call
-         label="Firestorm Events Calendar"
-         name="Firestorm Events Calendar">
+         label="qikfox3D Events Calendar"
+         name="qikfox3D Events Calendar">
              <menu_item_call.on_click
              function="PromptShowURL"
              name="events_calendar_url"

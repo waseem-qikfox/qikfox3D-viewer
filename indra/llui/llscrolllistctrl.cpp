@@ -2211,14 +2211,14 @@ bool LLScrollListCtrl::handleRightMouseDown(S32 x, S32 y, MASK mask)
             registrar.add("Url.CopyUrl", boost::bind(&LLScrollListCtrl::copySLURLToClipboard, id, is_group));
 
             // <FS:Ansariel> Additional convenience options
-            registrar.add("FS.ZoomIn", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/zoom", true));
-            registrar.add("FS.TeleportToTarget", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/teleportto", true));
-            registrar.add("FS.OfferTeleport", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/offerteleport", true));
-            registrar.add("FS.RequestTeleport", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/requestteleport", true));
-            registrar.add("FS.TrackAvatar", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/track", true));
-            registrar.add("FS.AddToContactSet", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/addtocontactset", true)); // [FS:CR]
-            registrar.add("FS.BlockAvatar", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/blockavatar", true));
-            registrar.add("FS.ViewLog", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/viewlog", true));
+            registrar.add("FS.ZoomIn", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + id + "/zoom", true));
+            registrar.add("FS.TeleportToTarget", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + id + "/teleportto", true));
+            registrar.add("FS.OfferTeleport", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + id + "/offerteleport", true));
+            registrar.add("FS.RequestTeleport", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + id + "/requestteleport", true));
+            registrar.add("FS.TrackAvatar", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + id + "/track", true));
+            registrar.add("FS.AddToContactSet", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + id + "/addtocontactset", true)); // [FS:CR]
+            registrar.add("FS.BlockAvatar", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + id + "/blockavatar", true));
+            registrar.add("FS.ViewLog", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + id + "/viewlog", true));
             // </FS:Ansariel> Additional convenience options
 
             // <FS:Ansariel> Add enable checks for menu items
@@ -2240,9 +2240,9 @@ bool LLScrollListCtrl::handleRightMouseDown(S32 x, S32 y, MASK mask)
             // <FS:Zi> FIRE-30725 - Add more group functions to group URL context menu
             std::string uuid_str = uuid.asString();
 
-            registrar.add("FS.JoinGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + uuid_str + "/groupjoin", true));
-            registrar.add("FS.LeaveGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + uuid_str + "/groupleave", true));
-            registrar.add("FS.ActivateGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + uuid_str + "/groupactivate", true));
+            registrar.add("FS.JoinGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + uuid_str + "/groupjoin", true));
+            registrar.add("FS.LeaveGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + uuid_str + "/groupleave", true));
+            registrar.add("FS.ActivateGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + uuid_str + "/groupactivate", true));
 
             enable_registrar.add("FS.WaitingForGroupData", std::bind(&FSRegistrarUtils::checkIsEnabled, gFSRegistrarUtils, uuid, EFSRegistrarFunctionActionType::FS_RGSTR_CHK_WAITING_FOR_GROUP_DATA));
             enable_registrar.add("FS.HaveGroupData", std::bind(&FSRegistrarUtils::checkIsEnabled, gFSRegistrarUtils, uuid, EFSRegistrarFunctionActionType::FS_RGSTR_CHK_HAVE_GROUP_DATA));

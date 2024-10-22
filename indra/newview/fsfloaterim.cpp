@@ -21,7 +21,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
  * Linden Research, Inc., 945 Battery Street, San Francisco, CA  94111  USA
- * http://www.firestormviewer.org
+ * http://www.qikfox3Dviewer.org
  * $/LicenseInfo$
  */
 
@@ -406,7 +406,7 @@ void FSFloaterIM::sendMsgFromInputEditor(EChatType type)
                 // <FS:Techwolf Lupindo> Support group chat prefix
                 static LLCachedControl<bool> chat_prefix_support(gSavedSettings, "FSSupportGroupChatPrefix3");
                 static LLCachedControl<bool> chat_prefix_testing(gSavedSettings, "FSSupportGroupChatPrefixTesting");
-                if ((chat_prefix_support || chat_prefix_testing) && FSData::getInstance()->isFirestormGroup(mSessionID))
+                if ((chat_prefix_support || chat_prefix_testing) && FSData::getInstance()->isqikfox3DGroup(mSessionID))
                 {
                     // <FS:PP> FIRE-7075: Skin indicator
                     static LLCachedControl<std::string> FSInternalSkinCurrent(gSavedSettings, "FSInternalSkinCurrent");
@@ -1025,7 +1025,7 @@ bool FSFloaterIM::postBuild()
     getChild<LLButton>("send_chat")->setCommitCallback(boost::bind(&FSFloaterIM::sendMsgFromInputEditor, this, CHAT_TYPE_NORMAL));
     getChild<LLButton>("chat_search_btn")->setCommitCallback(boost::bind(&FSFloaterIM::onChatSearchButtonClicked, this));
 
-    bool isFSSupportGroup = FSData::getInstance()->isFirestormGroup(mSessionID);
+    bool isFSSupportGroup = FSData::getInstance()->isqikfox3DGroup(mSessionID);
     bool isFSTestingGroup = FSData::getInstance()->isTestingGroup(mSessionID);
 
     //We can show the testing group button simply by checking testing group

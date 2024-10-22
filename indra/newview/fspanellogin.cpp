@@ -1032,7 +1032,7 @@ void FSPanelLogin::onClickNewAccount(void*)
             LLWeb::loadURLInternal(grid_info[GRID_REGISTER_NEW_ACCOUNT]);
         else
 #endif // OPENSIM
-            // <FS:PP> Load Firestorm's registration page from within the viewer itself
+            // <FS:PP> Load qikfox3D's registration page from within the viewer itself
             // LLWeb::loadURLExternal(LLTrans::getString("create_account_url"));
             LLWeb::loadURLInternal(LLTrans::getString("create_account_url"));
             // </FS:PP>
@@ -1238,7 +1238,7 @@ void FSPanelLogin::onLocationSLURL()
 }
 
 /////////////////////////////
-//   Firestorm functions   //
+//   qikfox3D functions   //
 /////////////////////////////
 
 std::string canonicalize_username(const std::string& name)

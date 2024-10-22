@@ -66,7 +66,7 @@
 // </FS:Ansariel> [FS Communication UI]
 #include "llspeakers.h"
 #include "llnotificationsutil.h"
-// <FS:Zi> We don't use the mini location panel in Firestorm
+// <FS:Zi> We don't use the mini location panel in qikfox3D
 // #include "llpaneltopinfobar.h"
 #include "llparcel.h"
 #include "llperfstats.h"
@@ -111,7 +111,7 @@
 #include "rlvui.h"
 // [/RLVa:KB]
 
-// Firestorm includes
+// qikfox3D includes
 #include "fsfloaternearbychat.h"
 #include "fslslbridge.h"
 #include "llpresetsmanager.h"
@@ -2777,7 +2777,7 @@ void LLAgent::endAnimationUpdateUI()
         LLNavigationBar::instance().getView()->setVisible(true);
         gStatusBar->setVisibleForMouselook(true);
 
-        // <FS:Zi> We don't use the mini location panel in Firestorm
+        // <FS:Zi> We don't use the mini location panel in qikfox3D
         // static LLCachedControl<bool> show_mini_location_panel(gSavedSettings, "ShowMiniLocationPanel");
         // if (show_mini_location_panel)
         // {
@@ -2952,7 +2952,7 @@ void LLAgent::endAnimationUpdateUI()
         LLNavigationBar::instance().getView()->setVisible(false);
         gStatusBar->setVisibleForMouselook(false);
 
-        // <FS:Zi> We don't use the mini location panel in Firestorm
+        // <FS:Zi> We don't use the mini location panel in qikfox3D
         // LLPanelTopInfoBar::getInstance()->setVisible(false);
 
         LLChicletBar::getInstance()->setVisible(false);

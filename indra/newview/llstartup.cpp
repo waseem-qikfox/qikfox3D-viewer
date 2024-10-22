@@ -220,7 +220,7 @@
 #include "lldxhardware.h"
 #endif
 
-// Firestorm includes
+// qikfox3D includes
 // <FS:Ansariel> [FS communication UI]
 //#include "llfloaterimsession.h"
 #include "fsfloaterim.h"
@@ -313,7 +313,7 @@ std::unique_ptr<LLViewerStats::PhaseMap> LLStartUp::sPhases(new LLViewerStats::P
 void login_show();
 void login_callback(S32 option, void* userdata);
 void show_release_notes_if_required();
-//void show_first_run_dialog(); // <FS:CR> Unused in Firestorm
+//void show_first_run_dialog(); // <FS:CR> Unused in qikfox3D
 bool first_run_dialog_callback(const LLSD& notification, const LLSD& response);
 void set_startup_status(const F32 frac, const std::string& string, const std::string& msg);
 bool login_alert_status(const LLSD& notification, const LLSD& response);

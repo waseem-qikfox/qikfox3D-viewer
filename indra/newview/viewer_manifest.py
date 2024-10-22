@@ -45,7 +45,7 @@ import time
 
 sys.dont_write_bytecode = True # <FS:Ansariel> Prevents creating __pycache__ directory
 
-from fs_viewer_manifest import FSViewerManifest #<FS:ND/> Manifest extensions for Firestorm
+from fs_viewer_manifest import FSViewerManifest #<FS:ND/> Manifest extensions for qikfox3D
 
 viewer_dir = os.path.dirname(__file__)
 # Add indra/lib/python to our path so we don't have to muck with PYTHONPATH.
@@ -206,7 +206,7 @@ class ViewerManifest(LLManifest,FSViewerManifest):
                             self.path("*/*.png")
                             self.path("*.tga")
                             self.path("*.j2c")
-                            self.path("*.jpg") # <FS:Ansariel> Needed for Firestorm
+                            self.path("*.jpg") # <FS:Ansariel> Needed for qikfox3D
                             self.path("*.png")
                             self.path("textures.xml")
                     self.path("*/xui/*/*.xml")
@@ -613,8 +613,8 @@ class Windows_x86_64_Manifest(ViewerManifest):
         debpkgdir = os.path.join(pkgdir, "lib", "debug")
 
         if self.is_packaging_viewer():
-            # Find firestorm-bin.exe in the 'configuration' dir, then rename it to the result of final_exe.
-            self.path(src='%s/firestorm-bin.exe' % self.args['configuration'], dst=self.final_exe())
+            # Find qikfox3D-bin.exe in the 'configuration' dir, then rename it to the result of final_exe.
+            self.path(src='%s/qikfox3D-bin.exe' % self.args['configuration'], dst=self.final_exe())
             # Emit the whole app image as one of the GitHub step outputs. We
             # want the whole app -- but NOT the extraneous build products that
             # get tossed into the same directory, such as the installer and
@@ -1024,7 +1024,7 @@ class Windows_x86_64_Manifest(ViewerManifest):
         #                dirs_exist_ok=True)
         # </FS:Ansariel>
 
-        tempfile = "firestorm_setup_tmp.nsi"
+        tempfile = "qikfox3D_setup_tmp.nsi"
 
         self.fs_sign_win_binaries() # <FS:ND/> Sign files, step one. Sign compiled binaries
 
@@ -1439,7 +1439,7 @@ class Darwin_x86_64_Manifest(ViewerManifest):
         # copy over the build result (this is a no-op if run within the xcode
         # script)
         #self.path(os.path.join(self.args['configuration'], self.channel() + ".app"), dst="")
-        self.path(os.path.join(self.args['configuration'], "Firestorm.app"), dst="")
+        self.path(os.path.join(self.args['configuration'], "qikfox3D.app"), dst="")
 
         pkgdir = os.path.join(self.args['build'], os.pardir, 'packages')
         relpkgdir = os.path.join(pkgdir, "lib", "release")
@@ -1451,7 +1451,7 @@ class Darwin_x86_64_Manifest(ViewerManifest):
 
         with self.prefix(src="", dst="Contents"):  # everything goes in Contents
             with self.prefix(dst="MacOS"):
-                executable = self.dst_path_of("Firestorm") # locate the executable within the bundle.
+                executable = self.dst_path_of("qikfox3D") # locate the executable within the bundle.
 
             bugsplat_db = self.args.get('bugsplat')
             print(f"debug: bugsplat_db={bugsplat_db}")
@@ -1544,7 +1544,7 @@ class Darwin_x86_64_Manifest(ViewerManifest):
                 with self.prefix(src=icon_path) :
                     self.path("firestorm_icon.icns")
 
-                self.path("Firestorm.nib")
+                self.path("qikfox3D.nib")
                 # Translations
                 self.path("English.lproj/language.txt")
                 self.replace_in(src="English.lproj/InfoPlist.strings",
@@ -1793,7 +1793,7 @@ class Darwin_x86_64_Manifest(ViewerManifest):
         if ("package" in self.args['actions'] or 
             "unpacked" in self.args['actions']):
             self.run_command_shell('strip -S %(viewer_binary)r' %
-                            { 'viewer_binary' : self.dst_path_of('Contents/MacOS/Firestorm')})
+                            { 'viewer_binary' : self.dst_path_of('Contents/MacOS/qikfox3D')})
 # </FS:Ansariel> construct method VMP trampoline crazy VMP launcher juggling shamelessly replaced with old version
 
     def package_finish(self):
@@ -1840,9 +1840,9 @@ class Darwin_x86_64_Manifest(ViewerManifest):
             # will use the release .DS_Store, and will look broken.
             # - Ambroff 2008-08-20
             #<FS:TS> Select proper directory based on flavor and build type
-            dmg_template_prefix = 'firestorm'
+            dmg_template_prefix = 'qikfox3D'
             if self.fs_is_opensim():
-                dmg_template_prefix = 'firestormos'
+                dmg_template_prefix = 'qikfox3Dos'
             dmg_template = os.path.join(
                 'installers', 'darwin', '%s-%s-dmg' % (dmg_template_prefix, self.channel_type()))
             print ("Trying template directory", dmg_template)
@@ -1961,7 +1961,7 @@ class Darwin_x86_64_Manifest(ViewerManifest):
                     plain_sign += glob.glob( app_in_dmg + "/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/*.dylib" )
 
                     deep_sign = [
-                        # <FS:ND> Firestorm does not ship SLVersionChecker
+                        # <FS:ND> qikfox3D does not ship SLVersionChecker
                         #resources + "updater/SLVersionChecker",
                         resources + "SLPlugin.app/Contents/MacOS/SLPlugin",
                         resources + "SLVoice",
@@ -2052,7 +2052,7 @@ class LinuxManifest(ViewerManifest):
             self.path("FIRESTORM_DESKTOPINSTALL.txt","FIRESTORM_DESKTOPINSTALL.txt")
             self.path("client-readme-voice.txt","README-linux-voice.txt")
             self.path("client-readme-joystick.txt","README-linux-joystick.txt")
-            self.path("wrapper.sh","firestorm")
+            self.path("wrapper.sh","qikfox3D")
             with self.prefix(dst="etc"):
                 self.path("handle_secondlifeprotocol.sh")
                 self.path("register_secondlifeprotocol.sh")
@@ -2062,7 +2062,7 @@ class LinuxManifest(ViewerManifest):
 
         with self.prefix(dst="bin"):
             self.path( os.path.join(os.pardir,'build_data.json'), "build_data.json" )
-            self.path("firestorm-bin","do-not-directly-run-firestorm-bin")
+            self.path("qikfox3D-bin","do-not-directly-run-qikfox3D-bin")
             self.path("../linux_crash_logger/linux-crash-logger","linux-crash-logger.bin")
             self.path2basename("../llplugin/slplugin", "SLPlugin")
             #this copies over the python wrapper script, associated utilities and required libraries, see SL-321, SL-322 and SL-323

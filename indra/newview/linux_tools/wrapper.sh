@@ -60,7 +60,7 @@ exportMutliArchDRIPath() {
 # export FONTCONFIG_PATH=/etc/fonts
 
 ## - Enable NVidia's threaded optimization by default. If you experience
-##   weird behavior starting with the 6.6.17 Firestorm release that you
+##   weird behavior starting with the 6.6.17 qikfox3D release that you
 ##   can verify not to be present in earlier versions, comment out the
 ##   next line. Thanks to Jira user Pazako Karu on FIRE-33398 to make us
 ##   aware of this option!
@@ -173,7 +173,7 @@ done
 # Don't quote $LL_WRAPPER because, if empty, it should simply vanish from the
 # command line. But DO quote "${ARGS[@]}": preserve separate args as
 # individually quoted.
-$LL_WRAPPER bin/do-not-directly-run-firestorm-bin "${ARGS[@]}"
+$LL_WRAPPER bin/do-not-directly-run-qikfox3D-bin "${ARGS[@]}"
 LL_RUN_ERR=$?
 
 # Handle any resulting errors

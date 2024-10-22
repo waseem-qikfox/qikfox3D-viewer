@@ -96,7 +96,7 @@
 #include "rlvlocks.h"
 // [/RLVa:KB]
 
-// Firestorm includes
+// qikfox3D includes
 #include "aoengine.h"
 #include "fsfloaterwearablefavorites.h"
 #include "fslslbridge.h"

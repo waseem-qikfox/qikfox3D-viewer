@@ -8,16 +8,16 @@
 		[CURRENT_GRID]
 	</string>
 	<string name="APP_NAME">
-		Firestorm
+		qikfox3D
 	</string>
 	<string name="CAPITALIZED_APP_NAME">
-		FIRESTORM
+		qikfox3D
 	</string>
 	<string name="SECOND_LIFE_GRID">
 		Сеть Second Life
 	</string>
 	<string name="SUPPORT_SITE">
-		Портал технической поддержки Firestorm
+		Портал технической поддержки qikfox3D
 	</string>
 	<string name="StartupDetectingHardware">
 		Обнаружение оборудования...
@@ -224,7 +224,7 @@ SLURL: &lt;nolink&gt;[SLURL]&lt;/nolink&gt;
 		Выйти
 	</string>
 	<string name="create_account_url">
-		https://www.firestormviewer.org/join-secondlife/
+		https://www.qikfox3Dviewer.org/join-secondlife/
 	</string>
 	<string name="AgniGridLabel">
 		Second Life Главная Сетка (Agni)
@@ -233,11 +233,11 @@ SLURL: &lt;nolink&gt;[SLURL]&lt;/nolink&gt;
 		Second Life Бета-тест Сетка (Aditi)
 	</string>
 	<string name="ViewerDownloadURL">
-		https://www.firestormviewer.org/choose-your-platform/
+		https://www.qikfox3Dviewer.org/choose-your-platform/
 	</string>
 	<string name="LoginFailedViewerNotPermitted">
 		У клиента, которым вы пользуетесь, больше нет доступа к игре Second Life. Загрузить новую версию клиента можно по адресу:
-https://www.firestormviewer.org/choose-your-platform/
+https://www.qikfox3Dviewer.org/choose-your-platform/
 
 Дополнительные сведения смотрите в разделе вопросов и ответов по адресу:
 http://secondlife.com/viewer-access-faq
@@ -860,7 +860,7 @@ support@secondlife.com.
 	</string>
 	<string name="AssetUploadRequestInvalid">
 Ошибка в запросе на загрузку.  Пожалуйста, посетите
-https://www.firestormviewer.org/support за помощь в решении этой проблемы.
+https://www.qikfox3Dviewer.org/support за помощь в решении этой проблемы.
 	</string>
 	<string name="SettingValidationError">
 		Ошибка при импорте настроек [NAME]
@@ -2049,8 +2049,8 @@ https://www.firestormviewer.org/support за помощь в решении эт
 	<string name="InvFolder All">
 		Все
 	</string>
-	<string name="InvFolder #Firestorm">
-		#Firestorm
+	<string name="InvFolder #qikfox3D">
+		#qikfox3D
 	</string>
 	<string name="InvFolder #Phoenix">
 		#Phoenix

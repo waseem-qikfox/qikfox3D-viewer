@@ -796,9 +796,9 @@ bool LLAppViewerWin32::init()
         checkTemp(); // Always do and log this, no matter if using Bugsplat or not
 
         // Save those early so we don't have to deal with the dynamic memory during in process crash handling.
-        FS::LogfileIn = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_LOGS, "Firestorm.log"));
-        FS::LogfileOut = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_DUMP, "Firestorm.log"));
-        FS::DumpFile = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_DUMP, "Firestorm.dmp"));
+        FS::LogfileIn = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_LOGS, "qikfox3D.log"));
+        FS::LogfileOut = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_DUMP, "qikfox3D.log"));
+        FS::DumpFile = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_DUMP, "qikfox3D.dmp"));
 
         S32 nCrashSubmitBehavior = gCrashSettings.getS32("CrashSubmitBehavior");
         // Don't ever send? bail out!
@@ -990,7 +990,7 @@ bool LLAppViewerWin32::initHardwareTest()
             if (OSBTN_NO== button)
             {
                 LL_INFOS("AppInit") << "User quitting after failed DirectX 9 detection" << LL_ENDL;
-                LLWeb::loadURLExternal("http://www.firestormviewer.org/support", false);
+                LLWeb::loadURLExternal("http://www.qikfox3Dviewer.org/support", false);
                 return false;
             }
             gWarningSettings.setBOOL("AboutDirectX9", false);

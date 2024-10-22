@@ -144,7 +144,7 @@ bool LLConversation::isOlderThan(U32Days days) const
 
 void LLConversation::setListenIMFloaterOpened()
 {
-    // <FS:CR> [Firestorm Communications UI]
+    // <FS:CR> [qikfox3D Communications UI]
     //LLFloaterIMSession* floater = LLFloaterIMSession::findInstance(mSessionID);
     FSFloaterIM* floater = FSFloaterIM::findInstance(mSessionID);
 

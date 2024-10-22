@@ -42,7 +42,7 @@
 #include "lllandmarkactions.h"
 #include "lllocationhistory.h"
 #include "lllocationinputctrl.h"
-// <FS:Zi> We don't use the mini location panel in Firestorm
+// <FS:Zi> We don't use the mini location panel in qikfox3D
 // #include "llpaneltopinfobar.h"
 #include "llteleporthistory.h"
 #include "llresizebar.h"
@@ -842,7 +842,7 @@ void LLNavigationBar::onNavigationButtonHeldUp(LLButton* nav_button)
 void LLNavigationBar::handleLoginComplete()
 {
     LLTeleportHistory::getInstance()->handleLoginComplete();
-    // <FS:Zi> We don't use the mini location panel in Firestorm
+    // <FS:Zi> We don't use the mini location panel in qikfox3D
     // LLPanelTopInfoBar::instance().handleLoginComplete();
     gStatusBar->handleLoginComplete();
     mCmbLocation->handleLoginComplete();

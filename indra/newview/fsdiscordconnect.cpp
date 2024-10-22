@@ -4,7 +4,7 @@
  * @author liny@pinkfox.xyz
  *
  * $LicenseInfo:firstyear=2013&license=viewerlgpl$
- * Phoenix Firestorm Viewer Source Code
+ * Phoenix qikfox3D Viewer Source Code
  * Copyright (C) 2019 Liny Odell @ Second Life
  *
  * This library is free software; you can redistribute it and/or
@@ -21,8 +21,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * The Phoenix Firestorm Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
- * http://www.firestormviewer.org
+ * The Phoenix qikfox3D Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
+ * http://www.qikfox3Dviewer.org
  */
 
 #include "llviewerprecompiledheaders.h"
@@ -239,7 +239,7 @@ void FSDiscordConnect::updateRichPresence() const
 
     auto gridLabel = LLGridManager::getInstance()->getGridLabel();
     discordPresence.largeImageText = gridLabel.c_str();
-    discordPresence.smallImageKey = "firestorm_512";
+    discordPresence.smallImageKey = "qikfox3D_512";
     std::string appName = std::string("via " + APP_NAME);
     discordPresence.smallImageText = appName.c_str();
 

@@ -36,44 +36,44 @@ def generate_secret(secret_key):
 # -------------------------------------------------------------------------------------------------------
 
 # Windows for SL 64 bit
-# https://downloads.firestormviewer.org/preview/windows/Phoenix-Firestorm-Releasex64-6-6-8-68355_Setup.exe
+# https://downloads.firestormviewer.org/preview/windows/Phoenix-qikfox3D-Releasex64-6-6-8-68355_Setup.exe
 
 # MD5: 3094776F5DB11B6A959B0F3AED068C6A
 
 # Windows for SL 32 bit
-# https://downloads.firestormviewer.org/preview/windows/Phoenix-Firestorm-Release-6-6-8-68355_Setup.exe
+# https://downloads.firestormviewer.org/preview/windows/Phoenix-qikfox3D-Release-6-6-8-68355_Setup.exe
 
 # MD5: 2F960B3353971FFF63307B5210D306F5
 
 # Windows for Opensim 64bit
-# https://downloads.firestormviewer.org/preview/windows/Phoenix-FirestormOS-Releasex64-6-6-8-68355_Setup.exe
+# https://downloads.firestormviewer.org/preview/windows/Phoenix-qikfox3DOS-Releasex64-6-6-8-68355_Setup.exe
 
 # MD5: 6218D7B826538BB956699F9581532ECE
 
 # Windows for Opensim 32bit
-# https://downloads.firestormviewer.org/preview/windows/Phoenix-FirestormOS-Release-6-6-8-68355_Setup.exe
+# https://downloads.firestormviewer.org/preview/windows/Phoenix-qikfox3DOS-Release-6-6-8-68355_Setup.exe
 
 # MD5: D636CAFD287B4C8B96D726FE2A145327
 
 # -------------------------------------------------------------------------------------------------------
 # Mac OSX for SL
-# https://downloads.firestormviewer.org/preview/mac/Phoenix-Firestorm-Releasex64-6-6-8-68355.dmg
+# https://downloads.firestormviewer.org/preview/mac/Phoenix-qikfox3D-Releasex64-6-6-8-68355.dmg
 
 # MD5: DA5AF534690328078B0B7BCEEA8D6959
 
 # Mac OSX for Opensim
-# https://downloads.firestormviewer.org/preview/mac/Phoenix-FirestormOS-Releasex64-6-6-8-68355.dmg
+# https://downloads.firestormviewer.org/preview/mac/Phoenix-qikfox3DOS-Releasex64-6-6-8-68355.dmg
 
 # MD5: 16CA020E73760D8205E2314D07EEC90E
 
 # -------------------------------------------------------------------------------------------------------
 # Linux for SL
-# https://downloads.firestormviewer.org/preview/linux/Phoenix-Firestorm-Releasex64-6-6-8-68355.tar.xz
+# https://downloads.firestormviewer.org/preview/linux/Phoenix-qikfox3D-Releasex64-6-6-8-68355.tar.xz
 
 # MD5: 1A0C50065077B92889FFBC651E4278E4
 
 # Linux for Opensim
-# https://downloads.firestormviewer.org/preview/linux/Phoenix-FirestormOS-Releasex64-6-6-8-68355.tar.xz
+# https://downloads.firestormviewer.org/preview/linux/Phoenix-qikfox3DOS-Releasex64-6-6-8-68355.tar.xz
 
 # MD5: 9D5D8021F376194B42F6E7D8E537E45E
 
@@ -328,7 +328,7 @@ def gather_build_info(build_type_info, config):
                 file_URI = f"{download_root}/{platform_folder}/{base_name}"
                 md5 = get_md5(full_file)
                 
-                if "FirestormOS-" in base_name:
+                if "qikfox3DOS-" in base_name:
                     grid = "OS"
                 else:
                     grid = "SL"
@@ -397,7 +397,7 @@ DOWNLOADS - {build_info["build_type"]}
     return text_summary
 
 def update_fs_version_mgr(build_info, config):
-    print(f"Updating Firestorm Version Manager for build_type {build_info['build_type']}")
+    print(f"Updating qikfox3D Version Manager for build_type {build_info['build_type']}")
     # Read the secret key from environment variables
     secret_key = os.environ.get('FS_VERSION_MGR_KEY')
     if not secret_key:

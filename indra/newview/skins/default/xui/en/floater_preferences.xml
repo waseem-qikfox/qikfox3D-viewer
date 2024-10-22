@@ -198,12 +198,12 @@
          help_topic="preferences_crashreports_tab"
          name="crashreports" />
         <panel
-         class="panel_preference_firestorm"
-         filename="panel_preferences_firestorm.xml"
-         label="Firestorm"
+         class="panel_preference_qikfox3D"
+         filename="panel_preferences_qikfox3D.xml"
+         label="qikfox3D"
          layout="topleft"
-         help_topic="preferences_firestorm_tab"
-         name="firestorm" />
+         help_topic="preferences_qikfox3D_tab"
+         name="qikfox3D" />
         <panel
          class="panel_preference_opensim"
          filename="panel_preferences_opensim.xml"

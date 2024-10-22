@@ -278,15 +278,15 @@
 			<menu_item_call.on_click name="script_library_url" parameter="WebLaunchExternalTarget,http://wiki.secondlife.com/wiki/Category:LSL_Library/ja"/>
 		</menu_item_call>
 		<menu_item_separator/>
-    	<menu_item_call label="Firestorm ブログ" name="Firestorm Blog">
-             <menu_item_call.on_click name="firestorm_blog_url" parameter="WebLaunchExternalTarget,https://www.firestormviewer.org" />
+    	<menu_item_call label="qikfox3D ブログ" name="qikfox3D Blog">
+             <menu_item_call.on_click name="qikfox3D_blog_url" parameter="WebLaunchExternalTarget,https://www.qikfox3Dviewer.org" />
 		</menu_item_call>
-    	<menu_item_call label="Firestorm ツイッター" name="Firestorm Twitter">
-             <menu_item_call.on_click name="firestorm_twitter_url" parameter="WebLaunchExternalTarget,https://twitter.com/phoenixviewersl" />
+    	<menu_item_call label="qikfox3D ツイッター" name="qikfox3D Twitter">
+             <menu_item_call.on_click name="qikfox3D_twitter_url" parameter="WebLaunchExternalTarget,https://twitter.com/phoenixviewersl" />
 		</menu_item_call>
        <menu_item_separator/>
 		<!-- added Mar.15, 2015 -->
-       <menu_item_call label="今日のメッセージ" name="Firestorm MoTD" />
+       <menu_item_call label="今日のメッセージ" name="qikfox3D MoTD" />
 		<!-- added Mar.15, 2015 -->
 				
 	</menu>
@@ -294,14 +294,14 @@
 	<!-- ヘルプメニュー -->
 	<menu label="ヘルプ" name="Help">
 		<menu_item_check label="ヒントを有効にする" name="Enable Hints"/>
-		<menu_item_call label="Firestorm Wiki" name="Firestorm Wiki"/>
+		<menu_item_call label="qikfox3D Wiki" name="qikfox3D Wiki"/>
 		<menu_item_call label="問題の解決" name="Troubleshooting">
-			<menu_item_call.on_click name="wiki_troubleshooting_url" parameter="WebLaunchExternalTarget,https://wiki.firestormviewer.org/firestorm_troubleshooting" />
+			<menu_item_call.on_click name="wiki_troubleshooting_url" parameter="WebLaunchExternalTarget,https://wiki.qikfox3Dviewer.org/qikfox3D_troubleshooting" />
 		</menu_item_call>
 		
-		<menu_item_call label="Firestormサポートグループに参加" name="firestorm_support_group"/>
-		<menu_item_call label="Firestorm 勉強会スケジュール" name="Firestorm Classes Schedule" />
-		<menu_item_call label="Firestorm イベントカレンダー" name="Firestorm Events Calendar" />
+		<menu_item_call label="qikfox3Dサポートグループに参加" name="qikfox3D_support_group"/>
+		<menu_item_call label="qikfox3D 勉強会スケジュール" name="qikfox3D Classes Schedule" />
+		<menu_item_call label="qikfox3D イベントカレンダー" name="qikfox3D Events Calendar" />
 		<menu_item_check label="ハウツー..." name="How To" />
 		<menu_item_call label="[CURRENT_GRID] ヘルプ" name="current_grid_help"/>
 		<menu_item_call label="[CURRENT_GRID] について" name="current_grid_about"/>

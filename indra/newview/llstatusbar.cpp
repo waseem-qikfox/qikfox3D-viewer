@@ -89,7 +89,7 @@
 // system includes
 #include <iomanip>
 
-// Firestorm includes
+// qikfox3D includes
 #include "llagentui.h"
 #include "llaudioengine.h"
 #include "llclipboard.h"
@@ -298,7 +298,7 @@ bool LLStatusBar::postBuild()
     getChild<LLUICtrl>("buyL")->setCommitCallback(
         boost::bind(&LLStatusBar::onClickBuyCurrency, this));
 
-    // <FS:Ansariel> Not used in Firestorm
+    // <FS:Ansariel> Not used in qikfox3D
     //getChild<LLUICtrl>("goShop")->setCommitCallback(boost::bind(&LLWeb::loadURL, gSavedSettings.getString("MarketplaceURL"), LLStringUtil::null, LLStringUtil::null));
 
     mBoxBalance = getChild<LLTextBox>("balance");
@@ -1230,11 +1230,11 @@ void LLStatusBar::updateBalancePanelPosition()
     const S32 HPAD = 24;
     LLRect balance_rect = mBoxBalance->getTextBoundingRect();
     LLRect buy_rect = getChildView("buyL")->getRect();
-    // <FS:Ansariel> Not used in Firestorm
+    // <FS:Ansariel> Not used in qikfox3D
     //LLRect shop_rect = getChildView("goShop")->getRect();
     LLView* balance_bg_view = getChildView("balance_bg");
     LLRect balance_bg_rect = balance_bg_view->getRect();
-    // <FS:Ansariel> Not used in Firestorm
+    // <FS:Ansariel> Not used in qikfox3D
     //balance_bg_rect.mLeft = balance_bg_rect.mRight - (buy_rect.getWidth() + shop_rect.getWidth() + balance_rect.getWidth() + HPAD);
     balance_bg_rect.mLeft = balance_bg_rect.mRight - (buy_rect.getWidth() + balance_rect.getWidth() + HPAD);
     // </FS:Ansariel>
@@ -1242,7 +1242,7 @@ void LLStatusBar::updateBalancePanelPosition()
 }
 
 //////////////////////////////////////////////////////////////////////////////
-// Firestorm methods
+// qikfox3D methods
 
 void LLStatusBar::showBalance(bool show)
 {

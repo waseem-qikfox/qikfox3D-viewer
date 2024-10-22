@@ -23,7 +23,7 @@
 #include "llmoveview.h"                 // Movement panel (contains "Stand" and "Stop Flying" buttons)
 #include "llnavigationbar.h"            // Navigation bar
 #include "llparcel.h"
-// <FS:Zi> We don't use the mini location panel in Firestorm
+// <FS:Zi> We don't use the mini location panel in qikfox3D
 // #include "llpaneltopinfobar.h"
 #include "llteleporthistory.h"
 #include "llviewerparcelmgr.h"
@@ -115,10 +115,10 @@ void RlvUIEnabler::onToggleShowLoc()
 
     if (LLNavigationBar::instanceExists())
         LLNavigationBar::instance().refreshLocationCtrl();
-    // <FS:Zi> We don't use the mini location panel in Firestorm
+    // <FS:Zi> We don't use the mini location panel in qikfox3D
     // if (LLPanelTopInfoBar::instanceExists())
     //  LLPanelTopInfoBar::instance().update();
-    // </FS:Zi> We don't use the mini location panel in Firestorm
+    // </FS:Zi> We don't use the mini location panel in qikfox3D
 
     if (!fEnable)
     {
@@ -201,7 +201,7 @@ void RlvUIEnabler::onToggleShowMinimap()
 
     // Break/reestablish the visibility connection for the nearby people panel embedded minimap instance
     LLPanel* pPeoplePanel = LLFloaterSidePanelContainer::getPanel("people", "panel_people");
-    LLPanel* pNetMapPanel = (pPeoplePanel) ? pPeoplePanel->getChild<LLPanel>("minimaplayout", true) : NULL;  //AO: firestorm specific
+    LLPanel* pNetMapPanel = (pPeoplePanel) ? pPeoplePanel->getChild<LLPanel>("minimaplayout", true) : NULL;  //AO: qikfox3D specific
     RLV_ASSERT( (pPeoplePanel) && (pNetMapPanel) );
     if (pNetMapPanel)
     {
@@ -213,7 +213,7 @@ void RlvUIEnabler::onToggleShowMinimap()
 
     // Break/reestablish the visibility connection for the radar panel embedded minimap instance
     LLFloater* pRadarFloater = LLFloaterReg::getInstance("fs_radar");
-    LLPanel* pRadarNetMapPanel = (pRadarFloater) ? pRadarFloater->getChild<LLPanel>("minimaplayout", true) : NULL;  //AO: firestorm specific
+    LLPanel* pRadarNetMapPanel = (pRadarFloater) ? pRadarFloater->getChild<LLPanel>("minimaplayout", true) : NULL;  //AO: qikfox3D specific
     RLV_ASSERT( (pRadarFloater) && (pRadarNetMapPanel) );
     if (pRadarNetMapPanel)
     {

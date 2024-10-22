@@ -109,7 +109,7 @@ indra/newview/pilot.xml
 #*.rej
 .*\.wixobj
 
-# Firestorm additions
+# qikfox3D additions
 indra/newview/exoflickrkeys.h
 indra/newview/fsdiscordkey.h
 my_autobuild.xml

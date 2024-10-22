@@ -393,13 +393,13 @@ LLColor4 LGGContactSets::colorize(const LLUUID& uuid, LLColor4 color, ContactSet
         {
             case ContactSetType::CHAT:
             case ContactSetType::IM:
-                color = LLUIColorTable::instance().getColor("FirestormChatColor", LLColor4::red).get();
+                color = LLUIColorTable::instance().getColor("qikfox3DChatColor", LLColor4::red).get();
                 break;
             case ContactSetType::TAG:
-                color = LLUIColorTable::instance().getColor("NameTagFirestorm", LLColor4::red).get();
+                color = LLUIColorTable::instance().getColor("NameTagqikfox3D", LLColor4::red).get();
                 break;
             case ContactSetType::MINIMAP:
-                color = LLUIColorTable::instance().getColor("MapAvatarFirestormColor", LLColor4::red).get();
+                color = LLUIColorTable::instance().getColor("MapAvatarqikfox3DColor", LLColor4::red).get();
                 break;
             case ContactSetType::RADAR:
                 // Do nothing

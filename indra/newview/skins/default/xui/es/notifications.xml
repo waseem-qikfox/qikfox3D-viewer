@@ -79,7 +79,7 @@ Detalles del error: la notificación de nombre &apos;[_NAME]&apos; no se ha enco
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="BadInstallation">
-		Ha habido un error actualizando [APP_NAME]. Por favor, [https://www.firestormviewer.org/downloads descarga la última versión] del Visor.
+		Ha habido un error actualizando [APP_NAME]. Por favor, [https://www.qikfox3Dviewer.org/downloads descarga la última versión] del Visor.
 		<usetemplate name="okbutton" yestext="Aceptar"/>
 	</notification>
 	<notification name="LoginFailedNoNetwork">
@@ -642,7 +642,7 @@ El objeto debe de haber sido borrado o estar fuera de alcance (&apos;out of rang
 
 ¿Ir a [_URL] para más información?
 		<url name="url" option="0">
-			https://wiki.firestormviewer.org/fs_system_requirements
+			https://wiki.qikfox3Dviewer.org/fs_system_requirements
 		</url>
 		<usetemplate ignoretext="El hardware de mi ordenador no está admitido" name="okcancelignore" notext="No" yestext="Sí"/>
 	</notification>
@@ -1444,7 +1444,7 @@ Si es la primera vez que usas [CURRENT_GRID], debes crear una cuenta para poder 
 
 Puedes revisar tu conexión a Internet y volver a intentarlo en unos minutos, pulsar Ayuda para conectarte a [SUPPORT_SITE], o pulsar Teleporte para intentar teleportarte a tu Base.
 		<url name="url">
-			https://www.firestormviewer.org/support/
+			https://www.qikfox3Dviewer.org/support/
 		</url>
 		<form name="form">
 			<button name="OK" text="Aceptar"/>
@@ -3740,7 +3740,7 @@ Al ocultar el botón Hablar se desactiva la función de voz.
 		</form>
 	</notification>
 	<notification name="ModeChange">
-		Cambiar entre los diferentes modos requiere que cierres y reinicies Firestorm.
+		Cambiar entre los diferentes modos requiere que cierres y reinicies qikfox3D.
 		<usetemplate name="okcancelbuttons" yestext="Cerrar" notext="No cerrar"/>
 	</notification>
 	<notification label="" name="NoClassifieds">
@@ -4724,7 +4724,7 @@ El nombre NO puede contener los caracteres ":" o "|".
 		[REASON]
 		<usetemplate name="okbutton" yestext="Aceptar"/>
 	</notification>
-	<notification name="FireStormReqInfo">
+	<notification name="qikfox3DReqInfo">
 		[NAME] te solicita que le envíes información sobre tu configuración de [APP_NAME] (Ésta es la misma información que puedes encontrar en Ayuda->Acerca de [APP_NAME])    
 [REASON]
 ¿Aceptas enviarle esta información?
@@ -4745,7 +4745,7 @@ El nombre NO puede contener los caracteres ":" o "|".
 	<notification name="MovelockDisabled">
 		Bloqueo de movimiento desactivado.
 	</notification>
-	<notification label="Restablecer todas las configuraciones" name="FirestormClearSettingsPrompt">
+	<notification label="Restablecer todas las configuraciones" name="qikfox3DClearSettingsPrompt">
 	Restablecer todas las configuraciones puede ser útil si estás experimentando problemas, aunque tendrás que repetir todas las personalizaciones que hayas podido hacer a la configuración por defecto. 
 
 ¿Estás seguro/a de que quieres proceder?
@@ -4850,7 +4850,7 @@ Configuración actual: [CURRENT_VALUE]
 		La cache del visor está vacía. Por favor, ten en cuenta que puedes sufrir de lentitud de movimiento y de inventario mientras se carga el nuevo contenido.
 	</notification>
 	<notification name="FirstJoinSupportGroup2">
-		¡Bienvenido al Grupo de Soporte de Phoenix/Firestorm Viewer!
+		¡Bienvenido al Grupo de Soporte de Phoenix/qikfox3D Viewer!
 Para facilitar el soporte, se recomienda que publiques la versión de tu visor en el grupo. Esta información incluye la versión actual del visor, el skin del visor, el sistema operativo y el estatus del RLVa. Puedes mostrar la versión de tu visor delante de cada mensaje que envías al grupo. Nuestros miembros de soporte pueden darte respuestas más adecuadas si saben qué visor estás usando.
 
 Puedes activar y desactivar esta función en cualquier momento usando la casilla existente en la ventana del chat del grupo.
@@ -4859,7 +4859,7 @@ Puedes activar y desactivar esta función en cualquier momento usando la casilla
 		<form name="form">
 			<button name="OK_okcancelignore" text="Sí"/>
 			<button name="Cancel_okcancelignore" text="No"/>
-			<ignore name="ignore" text="Te has unido al Grupo de Soporte de Phoenix/Firestorm"/>
+			<ignore name="ignore" text="Te has unido al Grupo de Soporte de Phoenix/qikfox3D"/>
 		</form>
 	</notification>
 	<notification name="ConfirmScriptModify">

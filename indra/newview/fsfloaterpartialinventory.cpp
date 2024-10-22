@@ -3,7 +3,7 @@
  * @brief Displays the inventory underneath a particular starting folder
  *
  * $LicenseInfo:firstyear=2022&license=viewerlgpl$
- * Phoenix Firestorm Viewer Source Code
+ * Phoenix qikfox3D Viewer Source Code
  * Copyright (c) 2022 Ansariel Hiller @ Second Life
  *
  * This library is free software; you can redistribute it and/or

@@ -48,7 +48,7 @@
 #include "llclipboard.h"
 #include "lltrans.h"
 
-// Firestorm includes
+// qikfox3D includes
 #include "llappearancemgr.h" // needed to query whether we are in COF
 #ifdef OPENSIM
 #include "fsgridhandler.h" // <FS:Beq> need to check if in opensim

@@ -285,7 +285,7 @@ bool LLPanelMainInventory::postBuild()
         worn_filter.markDefault();
         mWornItemsPanel->setSelectCallback(boost::bind(&LLPanelMainInventory::onSelectionChange, this, mWornItemsPanel, _1, _2));
 
-        // <FS:Ansariel> Firestorm additions
+        // <FS:Ansariel> qikfox3D additions
         mWornItemsPanel->setSortOrder(gSavedSettings.getU32(LLInventoryPanel::DEFAULT_SORT_ORDER));
 
         if (mWornItemsPanel->getRootFolder())

@@ -3404,7 +3404,7 @@ void LLVOAvatar::idleUpdateLoadingEffect()
 //              setParticleSource(particle_parameters, getID());
 //          }
 
-            // Firestorm Clouds
+            // qikfox3D Clouds
             // do not generate particles for dummy or overly-complex avatars
             if (!mIsDummy && !isTooComplex() && !isTooSlow())
             {

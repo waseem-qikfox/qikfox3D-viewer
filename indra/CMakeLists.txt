@@ -12,8 +12,8 @@
 #    "if(${CMAKE_VERSION} VERSION_LESS "3.20.0")" that can also be removed
 cmake_minimum_required(VERSION 3.16.0 FATAL_ERROR)
 
-set(ROOT_PROJECT_NAME "Firestorm" CACHE STRING
-    "The root project/makefile/solution name. Defaults to Firestorm.")
+set(ROOT_PROJECT_NAME "qikfox3D" CACHE STRING
+    "The root project/makefile/solution name. Defaults to qikfox3D.")
 project(${ROOT_PROJECT_NAME})
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake"  "${CMAKE_CURRENT_BINARY_DIR}")
@@ -173,10 +173,10 @@ else (USE_BUGSPLAT)
 endif (USE_BUGSPLAT)
 
 add_subdirectory(${VIEWER_PREFIX}newview)
-add_dependencies(viewer firestorm-bin)
+add_dependencies(viewer qikfox3D-bin)
 
 set_target_properties(
-    firestorm-bin PROPERTIES
+    qikfox3D-bin PROPERTIES
     VS_DEBUGGER_WORKING_DIRECTORY "..\\..\\indra\\newview")
 
 add_subdirectory(${VIEWER_PREFIX}doxygen EXCLUDE_FROM_ALL)

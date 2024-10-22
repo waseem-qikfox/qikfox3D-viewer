@@ -1,6 +1,6 @@
-# Firestorm Pull Request Guidelines
+# qikfox3D Pull Request Guidelines
 
-Thank you for submitting code to Firestorm; we will review it and merge or provide feedback in due course.
+Thank you for submitting code to qikfox3D; we will review it and merge or provide feedback in due course.
 We have written this guide to help you contribute code that meets our needs. It will hopefully reduce the number of iterations required before we can merge the code.
 
 1. **Descriptive Title**:

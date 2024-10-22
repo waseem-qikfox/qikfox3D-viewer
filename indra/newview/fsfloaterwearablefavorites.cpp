@@ -3,7 +3,7 @@
  * @brief Class for the favorite wearables floater
  *
  * $LicenseInfo:firstyear=2018&license=viewerlgpl$
- * Phoenix Firestorm Viewer Source Code
+ * Phoenix qikfox3D Viewer Source Code
  * Copyright (c) 2018 Ansariel Hiller @ Second Life
  *
  * This library is free software; you can redistribute it and/or
@@ -20,8 +20,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * The Phoenix Firestorm Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
- * http://www.firestormviewer.org
+ * The Phoenix qikfox3D Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
+ * http://www.qikfox3Dviewer.org
  * $/LicenseInfo$
  */
 
@@ -210,7 +210,7 @@ bool FSFloaterWearableFavorites::handleKeyHere(KEY key, MASK mask)
 // static
 std::optional<LLUUID> FSFloaterWearableFavorites::getWearableFavoritesFolderID()
 {
-    if (LLUUID fs_root_cat_id = gInventory.findCategoryByName(ROOT_FIRESTORM_FOLDER); !fs_root_cat_id.isNull())
+    if (LLUUID fs_root_cat_id = gInventory.findCategoryByName(ROOT_qikfox3D_FOLDER); !fs_root_cat_id.isNull())
     {
         LLInventoryModel::item_array_t* items;
         LLInventoryModel::cat_array_t* cats;
@@ -246,10 +246,10 @@ void FSFloaterWearableFavorites::initCategory(inventory_func_type callback)
     }
     else
     {
-        LLUUID fs_root_cat_id = gInventory.findCategoryByName(ROOT_FIRESTORM_FOLDER);
+        LLUUID fs_root_cat_id = gInventory.findCategoryByName(ROOT_qikfox3D_FOLDER);
         if (fs_root_cat_id.isNull())
         {
-            gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_FIRESTORM_FOLDER, [callback](const LLUUID& new_cat_id)
+            gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_qikfox3D_FOLDER, [callback](const LLUUID& new_cat_id)
             {
                 gInventory.createNewCategory(new_cat_id, LLFolderType::FT_NONE, FS_WEARABLE_FAVORITES_FOLDER, [callback](const LLUUID& new_cat_id)
                 {

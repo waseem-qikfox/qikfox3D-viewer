@@ -8,7 +8,7 @@
 		Grille de Second Life
 	</string>
 	<string name="SUPPORT_SITE">
-		Portail Assistance Firestorm
+		Portail Assistance qikfox3D
 	</string>
 	<string name="StartupDetectingHardware">
 		Détection du matériel...
@@ -205,7 +205,7 @@ Version serveur vocal : [VOICE_VERSION]
 		Quitter
 	</string>
 	<string name="create_account_url">
-		https://www.firestormviewer.org/join-secondlife/
+		https://www.qikfox3Dviewer.org/join-secondlife/
 	</string>
 	<string name="AgniGridLabel">
 		Grille principale de Second Life (Agni)
@@ -6588,7 +6588,7 @@ correctement. Si vous continuez à recevoir ce message d&apos;erreur, veuillez v
 		avec support de OpenSimulator
 	</string>
 
-	<!-- Firestorm search -->
+	<!-- qikfox3D search -->
 	<string name="not_found">
 		&apos;[TEXT]&apos; introuvable
 	</string>

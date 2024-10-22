@@ -1642,9 +1642,9 @@ namespace LLError
     {
         // Files Are missing, likely can't localize.
         const std::string error_string =
-            "Firestorm couldn't access some of the files it needs and will be closed."
-            "\n\nPlease reinstall viewer from https://www.firestormviewer.org/download and "
-            "contact https://www.firestormviewer.org/support if issue persists after reinstall.";
+            "qikfox3D couldn't access some of the files it needs and will be closed."
+            "\n\nPlease reinstall viewer from https://www.qikfox3Dviewer.org/download and "
+            "contact https://www.qikfox3Dviewer.org/support if issue persists after reinstall.";
         sHandler("Missing Files", error_string);
     }
 

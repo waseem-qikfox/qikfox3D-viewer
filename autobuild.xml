@@ -58,7 +58,7 @@
               <key>hash</key>
               <string>01f39ecf80dae64e30402ac384035b3e</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/gstreamer10-1.6.3.201605191852-linux-201605191852.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/gstreamer10-1.6.3.201605191852-linux-201605191852.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -86,7 +86,7 @@
               <key>hash</key>
               <string>482c2b25bbfd25edc058a02f82da39b2</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/breakpad-4708e6fb-linux64_bionic-220392253.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/breakpad-4708e6fb-linux64_bionic-220392253.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -116,7 +116,7 @@
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/glib-2.64.6.240620740-linux64-240620740.tar.zst</string>
+              <string>https://3p.qikfox3Dviewer.org/glib-2.64.6.240620740-linux64-240620740.tar.zst</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -176,7 +176,7 @@
               <key>hash</key>
               <string>0008a7b291fa1863ba41424b4e3ac302</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/jemalloc-5.3.0-linux64-222631217.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/jemalloc-5.3.0-linux64-222631217.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -202,7 +202,7 @@
               <key>hash</key>
               <string>7d375112b162e32e37262da4a6c0a702</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/ndPhysicsStub-1.0-darwin-202330107.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/ndPhysicsStub-1.0-darwin-202330107.tar.bz2</string>
             </map>
             <key>name</key>
             <string>darwin</string>
@@ -214,7 +214,7 @@
               <key>hash</key>
               <string>c266a8d6124fc11e41a82c288f2bf8e4</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/ndPhysicsStub-1.202321033-linux64-202321033.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/ndPhysicsStub-1.202321033-linux64-202321033.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -226,7 +226,7 @@
               <key>hash</key>
               <string>02f70159e14c7b7213b22a0225508c46</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/ndPhysicsStub-1.0-windows64-202121823.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/ndPhysicsStub-1.0-windows64-202121823.tar.bz2</string>
             </map>
             <key>name</key>
             <string>windows64</string>
@@ -252,7 +252,7 @@
               <key>hash</key>
               <string>94fc457c46e1fb94b31251bd4747d10f</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/glod-1.0pre3.171101143-darwin64-171101143.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/glod-1.0pre3.171101143-darwin64-171101143.tar.bz2</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -264,7 +264,7 @@
               <key>hash</key>
               <string>acc1181cd31ef32c3724eda84ae4b580</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/glod-1.0pre3.180990827-linux64-180990827.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/glod-1.0pre3.180990827-linux64-180990827.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -276,7 +276,7 @@
               <key>hash</key>
               <string>e906cf08bfbfbd9d4fc78557e021e7d0</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/glod-1.0pre3.vs2017-1906061512-windows64-vs2017-1906061512.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/glod-1.0pre3.vs2017-1906061512-windows64-vs2017-1906061512.tar.bz2</string>
             </map>
             <key>name</key>
             <string>windows64</string>
@@ -304,7 +304,7 @@
               <key>hash</key>
               <string>33300134846d0f00ac4f31c1a190e3e6</string>
               <key>url</key>
-              <uri>https://3p.firestormviewer.org/gntp_growl-1.0-darwin-201505101047-r12.tar.bz2</uri>
+              <uri>https://3p.qikfox3Dviewer.org/gntp_growl-1.0-darwin-201505101047-r12.tar.bz2</uri>
             </map>
             <key>name</key>
             <string>darwin</string>
@@ -316,7 +316,7 @@
               <key>hash</key>
               <string>af06208ec80b1f170cc560141602e2dc</string>
               <key>url</key>
-              <uri>https://3p.firestormviewer.org/libnotify-0.4.4-linux-20101003.tar.bz2</uri>
+              <uri>https://3p.qikfox3Dviewer.org/libnotify-0.4.4-linux-20101003.tar.bz2</uri>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -328,7 +328,7 @@
               <key>hash</key>
               <string>a333b335104b3d0df14b9be005ef1571</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/gntp_growl-1.0-windows64-vs2017-1906061512.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/gntp_growl-1.0-windows64-vs2017-1906061512.tar.bz2</string>
             </map>
             <key>name</key>
             <string>windows64</string>
@@ -356,7 +356,7 @@
               <key>hash</key>
               <string>f63f07d4c87fbbb698b9039583f08b76</string>
               <key>url</key>
-              <uri>https://3p.firestormviewer.org/discord_rpc-3.4.0-windows64-192581529.tar.bz2</uri>
+              <uri>https://3p.qikfox3Dviewer.org/discord_rpc-3.4.0-windows64-192581529.tar.bz2</uri>
             </map>
             <key>name</key>
             <string>windows64</string>
@@ -368,7 +368,7 @@
               <key>hash</key>
               <string>cefa1cdb50a85e36114ca89df66c0b5a</string>
               <key>url</key>
-              <uri>https://3p.firestormviewer.org/discord_rpc-3.4.0-linux64-192540843.tar.bz2</uri>
+              <uri>https://3p.qikfox3Dviewer.org/discord_rpc-3.4.0-linux64-192540843.tar.bz2</uri>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -380,7 +380,7 @@
               <key>hash</key>
               <string>3bc297a0fa47094bb52d361f80186387</string>
               <key>url</key>
-              <uri>https://3p.firestormviewer.org/discord_rpc-3.4.0-darwin64-192522358.tar.bz2</uri>
+              <uri>https://3p.qikfox3Dviewer.org/discord_rpc-3.4.0-darwin64-192522358.tar.bz2</uri>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -740,7 +740,7 @@
               <key>hash</key>
               <string>2d59bb6f4bd38a18d9250ff010a13b59</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/dictionaries-2.46203-common-46203.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/dictionaries-2.46203-common-46203.tar.bz2</string>
             </map>
             <key>name</key>
             <string>common</string>
@@ -926,7 +926,7 @@
               <key>hash_algorithm</key>
               <string>md5</string>
               <key>url</key>
-              <string>file:///opt/firestorm/fmodstudio-2.02.20-darwin64-240390127.tar.bz2</string>
+              <string>file:///opt/qikfox3D/fmodstudio-2.02.20-darwin64-240390127.tar.bz2</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -940,7 +940,7 @@
               <key>hash_algorithm</key>
               <string>md5</string>
               <key>url</key>
-              <string>file:///opt/firestorm/fmodstudio-2.02.20-linux64-240390132.tar.bz2</string>
+              <string>file:///opt/qikfox3D/fmodstudio-2.02.20-linux64-240390132.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -954,7 +954,7 @@
               <key>hash_algorithm</key>
               <string>md5</string>
               <key>url</key>
-              <string>file:///c:/cygwin/opt/firestorm/fmodstudio-2.02.20-windows64-240381643.tar.bz2</string>
+              <string>file:///c:/cygwin/opt/qikfox3D/fmodstudio-2.02.20-windows64-240381643.tar.bz2</string>
             </map>
             <key>name</key>
             <string>windows64</string>
@@ -1332,7 +1332,7 @@
               <key>hash</key>
               <string>47af788cc447a64e311e3a65b74a9cf9</string>
               <key>url</key>
-              <string>file:///opt/firestorm/kdu-8.4.1-darwin64-233220201.tar.bz2</string>
+              <string>file:///opt/qikfox3D/kdu-8.4.1-darwin64-233220201.tar.bz2</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -1344,7 +1344,7 @@
               <key>hash</key>
               <string>b464a547d5bedcc72e9173d860f40656</string>
               <key>url</key>
-              <string>file:///opt/firestorm/kdu-8.4.1-linux64-233220158.tar.bz2</string>
+              <string>file:///opt/qikfox3D/kdu-8.4.1-linux64-233220158.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -1356,7 +1356,7 @@
               <key>hash</key>
               <string>526965ad83ad9ee355b6596f489d82d9</string>
               <key>url</key>
-              <string>file:///c:/cygwin/opt/firestorm/kdu-8.4.1-windows-233220159.tar.bz2</string>
+              <string>file:///c:/cygwin/opt/qikfox3D/kdu-8.4.1-windows-233220159.tar.bz2</string>
             </map>
             <key>name</key>
             <string>windows64</string>
@@ -1552,7 +1552,7 @@
               <key>hash</key>
               <string>f3cc32c84b99f1277370ce88a0faf40e</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/libuuid-1.6.2-linux64-180841554.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/libuuid-1.6.2-linux64-180841554.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -1819,7 +1819,7 @@
               <key>hash</key>
               <string>9f70048bed4c3fc487bee9e9f4276037</string>
               <key>url</key>
-              <string>file:///opt/firestorm/llphysicsextensions_tpv-1.0.11371371972-darwin64-11371371972.tar.bz2</string>
+              <string>file:///opt/qikfox3D/llphysicsextensions_tpv-1.0.11371371972-darwin64-11371371972.tar.bz2</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -1843,7 +1843,7 @@
               <key>hash</key>
               <string>31daa8f133168cc9ab500aa3a235b63c</string>
               <key>url</key>
-              <string>file:///c:/cygwin/opt/firestorm/llphysicsextensions_tpv-1.0.11371371972-windows64-11371371972.tar.bz2</string>
+              <string>file:///c:/cygwin/opt/qikfox3D/llphysicsextensions_tpv-1.0.11371371972-windows64-11371371972.tar.bz2</string>
             </map>
             <key>name</key>
             <string>windows</string>
@@ -2554,7 +2554,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               <key>hash</key>
               <string>db89d5ce9695457cc1e94cf657678f1a</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/slvoice-3.2-linux64-222532329.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/slvoice-3.2-linux64-222532329.tar.bz2</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -2794,7 +2794,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://3p.firestormviewer.org/viewer_fonts-1.0.0.242151216-common-242151216.tar.bz2</string>
+              <string>https://3p.qikfox3Dviewer.org/viewer_fonts-1.0.0.242151216-common-242151216.tar.bz2</string>
             </map>
             <key>name</key>
             <string>common</string>
@@ -3254,7 +3254,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--build</string>
                   <string>--version</string>
                   <string>--opensim</string>
@@ -3266,7 +3266,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--config</string>
                   <string>--version</string>
                   <string>--opensim</string>
@@ -3283,7 +3283,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--build</string>
                   <string>--version</string>
                   <string>--opensim</string>
@@ -3296,7 +3296,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--config</string>
                   <string>--version</string>
                   <string>--opensim</string>
@@ -3314,7 +3314,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--build</string>
                   <string>--version</string>
                   <string>--opensim</string>
@@ -3327,7 +3327,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--config</string>
                   <string>--version</string>
                   <string>--opensim</string>
@@ -3345,7 +3345,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--build</string>
                   <string>--version</string>
                   <string>--opensim</string>
@@ -3357,7 +3357,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--config</string>
                   <string>--version</string>
                   <string>--opensim</string>
@@ -3374,7 +3374,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--btype RelWithDebInfo</string>
                   <string>--build</string>
                   <string>--version</string>
@@ -3387,7 +3387,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--btype RelWithDebInfo</string>
                   <string>--config</string>
                   <string>--version</string>
@@ -3405,7 +3405,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--btype RelWithDebInfo</string>
                   <string>--build</string>
                   <string>--version</string>
@@ -3418,7 +3418,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
                 <string>bash</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>../scripts/configure_qikfox3D.sh</string>
                   <string>--btype RelWithDebInfo</string>
                   <string>--config</string>
                   <string>--version</string>
@@ -4131,15 +4131,15 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
       <key>license_file</key>
       <string>docs/LICENSE-source.txt</string>
       <key>copyright</key>
-      <string>Copyright (c) 2024, The Phoenix Firestorm Project, Inc.</string>
+      <string>Copyright (c) 2024, The Phoenix qikfox3D Project, Inc.</string>
       <key>version_file</key>
       <string>newview/viewer_version.txt</string>
       <key>name</key>
-      <string>firestorm</string>
+      <string>qikfox3D</string>
       <key>canonical_repo</key>
       <string>https://github.com/secondlife/viewer</string>
       <key>description</key>
-      <string>Firestorm Viewer</string>
+      <string>qikfox3D Viewer</string>
     </map>
   </map>
 </llsd>

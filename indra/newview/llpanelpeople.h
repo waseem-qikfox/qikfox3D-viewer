@@ -49,7 +49,7 @@ class LLNetMap;
 class LLAccordionCtrl;
 class LLAccordionCtrlTab;
 
-// Firestorm declarations
+// qikfox3D declarations
 class LLMenuGL;
 class FSPanelRadar;
 
@@ -160,9 +160,9 @@ private:
     LLAvatarList*           mAllFriendList;
     LLAvatarList*           mNearbyList;
     LLAvatarList*           mContactSetList;    // [FS:CR] Contact sets
-    // <FS:Ansariel> Firestorm radar
+    // <FS:Ansariel> qikfox3D radar
     FSPanelRadar*           mRadarPanel;
-    // </FS:Ansariel> Firestorm radar
+    // </FS:Ansariel> qikfox3D radar
     LLAvatarList*           mRecentList;
     LLGroupList*            mGroupList;
     LLNetMap*               mMiniMap;
@@ -188,9 +188,9 @@ private:
     std::vector<std::string> mSavedFilters;
 
     Updater*                mFriendListUpdater;
-    // <FS:Ansariel> Firestorm radar
+    // <FS:Ansariel> qikfox3D radar
     //Updater*              mNearbyListUpdater;
-    // </FS:Ansariel> Firestorm radar
+    // </FS:Ansariel> qikfox3D radar
     Updater*                mRecentListUpdater;
     Updater*                mButtonsUpdater;
     LLHandle< LLFloater >   mPicker;

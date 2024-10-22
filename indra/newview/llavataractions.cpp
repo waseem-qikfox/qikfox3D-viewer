@@ -85,7 +85,7 @@
 #include "rlvhandler.h"
 // [/RLVa:KB]
 
-// Firestorm includes
+// qikfox3D includes
 #include "fsfloaterim.h"
 #include "fsfloaterimcontainer.h"
 #include "fslslbridge.h"
@@ -1907,7 +1907,7 @@ void LLAvatarActions::report(const LLUUID& idAgent)
 
 bool LLAvatarActions::canZoomIn(const LLUUID& idAgent)
 {
-    // <FS:Ansariel> Firestorm radar support
+    // <FS:Ansariel> qikfox3D radar support
     //return gObjectList.findObject(idAgent);
 
     LLViewerObject* object = gObjectList.findObject(idAgent);
@@ -1935,7 +1935,7 @@ bool LLAvatarActions::canZoomIn(const LLUUID& idAgent)
 
 void LLAvatarActions::zoomIn(const LLUUID& idAgent)
 {
-    // <FS:Ansariel> Firestorm radar support
+    // <FS:Ansariel> qikfox3D radar support
     //handle_zoom_to_object(idAgent);
 
     if (auto entry = FSRadar::getInstance()->getEntry(idAgent); entry)

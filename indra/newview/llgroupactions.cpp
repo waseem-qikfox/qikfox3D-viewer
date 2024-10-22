@@ -49,7 +49,7 @@
 #include "rlvhandler.h"
 // [/RLVa:KB]
 
-// Firestorm includes
+// qikfox3D includes
 #include "exogroupmutelist.h"
 #include "fscommon.h"
 #include "fsdata.h"

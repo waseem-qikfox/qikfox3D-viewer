@@ -86,7 +86,7 @@
 
 #include <boost/regex.hpp>
 
-// Firestorm includes
+// qikfox3D includes
 #include "lfsimfeaturehandler.h"
 #include "llviewermenu.h"
 #include "llviewernetwork.h"

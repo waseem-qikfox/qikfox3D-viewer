@@ -3,8 +3,8 @@
  * @brief FSLSLBridge header
  *
  * $LicenseInfo:firstyear=2011&license=fsviewerlgpl$
- * Phoenix Firestorm Viewer Source Code
- * Copyright (C) 2011-2015, The Phoenix Firestorm Project, Inc.
+ * Phoenix qikfox3D Viewer Source Code
+ * Copyright (C) 2011-2015, The Phoenix qikfox3D Project, Inc.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,8 +20,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * The Phoenix Firestorm Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
- * http://www.firestormviewer.org
+ * The Phoenix qikfox3D Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
+ * http://www.qikfox3Dviewer.org
  * $/LicenseInfo$
  */
 
@@ -36,7 +36,7 @@
 class FSLSLBridgeRequestResponder;
 
 const std::string LIB_ROCK_NAME = "Rock - medium, round";
-const std::string FS_BRIDGE_NAME = "#Firestorm LSL Bridge v";
+const std::string FS_BRIDGE_NAME = "#qikfox3D LSL Bridge v";
 const U8 FS_BRIDGE_POINT = 31;
 const std::string FS_BRIDGE_ATTACHMENT_POINT_NAME = "Center 2";
 

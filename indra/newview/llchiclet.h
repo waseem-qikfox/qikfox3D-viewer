@@ -32,7 +32,7 @@
 #include "llnotifications.h"
 #include "lltextbox.h"
 
-// Firestorm includes
+// qikfox3D includes
 #include "llgroupmgr.h"
 #include "llimview.h"
 #include "lloutputmonitorctrl.h"

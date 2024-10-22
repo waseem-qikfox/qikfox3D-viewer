@@ -2289,14 +2289,14 @@ void LLTextBase::createUrlContextMenu(S32 x, S32 y, const std::string &in_url)
 
     // <FS:Ansariel> Additional convenience options
     std::string target_id_str = LLUrlAction::extractUuidFromSlurl(url).asString();
-    registrar.add("FS.ZoomIn", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/zoom", true));
-    registrar.add("FS.TeleportToTarget", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/teleportto", true));
-    registrar.add("FS.OfferTeleport", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/offerteleport", true));
-    registrar.add("FS.RequestTeleport", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/requestteleport", true));
-    registrar.add("FS.TrackAvatar", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/track", true));
-    registrar.add("FS.AddToContactSet", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/addtocontactset", true));  // [FS:CR]
-    registrar.add("FS.BlockAvatar", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/blockavatar", true));
-    registrar.add("FS.ViewLog", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/viewlog", true));
+    registrar.add("FS.ZoomIn", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/zoom", true));
+    registrar.add("FS.TeleportToTarget", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/teleportto", true));
+    registrar.add("FS.OfferTeleport", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/offerteleport", true));
+    registrar.add("FS.RequestTeleport", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/requestteleport", true));
+    registrar.add("FS.TrackAvatar", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/track", true));
+    registrar.add("FS.AddToContactSet", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/addtocontactset", true));  // [FS:CR]
+    registrar.add("FS.BlockAvatar", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/blockavatar", true));
+    registrar.add("FS.ViewLog", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/viewlog", true));
     // </FS:Ansariel>
 
     // <FS:Ansariel> Add enable checks for menu items
@@ -2317,17 +2317,17 @@ void LLTextBase::createUrlContextMenu(S32 x, S32 y, const std::string &in_url)
     // </FS:Ansariel>
 
     // <FS:Zi> FIRE-30725 - Add more group functions to group URL context menu
-    registrar.add("FS.JoinGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupjoin", true));
-    registrar.add("FS.LeaveGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupleave", true));
-    registrar.add("FS.ActivateGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupactivate", true));
+    registrar.add("FS.JoinGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/groupjoin", true));
+    registrar.add("FS.LeaveGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/groupleave", true));
+    registrar.add("FS.ActivateGroup", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/groupactivate", true));
 
     // hook up moderation tools
     // if someone knows how to pass a parameter to these, let me know! - Zi
     // also, I wish I could pass the group session id through these calls, but LLTextBase does not know it - Zi
-    registrar.add("FS.AllowGroupChat", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupchatallow", true));
-    registrar.add("FS.ForbidGroupChat", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupchatforbid", true));
-    registrar.add("FS.EjectGroupMember", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupeject", true));
-    registrar.add("FS.BanGroupMember", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupban", true));
+    registrar.add("FS.AllowGroupChat", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/groupchatallow", true));
+    registrar.add("FS.ForbidGroupChat", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/groupchatforbid", true));
+    registrar.add("FS.EjectGroupMember", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/groupeject", true));
+    registrar.add("FS.BanGroupMember", std::bind(&LLUrlAction::executeSLURL, "secondlife:///app/qikfox3D/" + target_id_str + "/groupban", true));
 
     enable_registrar.add("FS.WaitingForGroupData", std::bind(&FSRegistrarUtils::checkIsEnabled, gFSRegistrarUtils, target_id, EFSRegistrarFunctionActionType::FS_RGSTR_CHK_WAITING_FOR_GROUP_DATA));
     enable_registrar.add("FS.HaveGroupData", std::bind(&FSRegistrarUtils::checkIsEnabled, gFSRegistrarUtils, target_id, EFSRegistrarFunctionActionType::FS_RGSTR_CHK_HAVE_GROUP_DATA));

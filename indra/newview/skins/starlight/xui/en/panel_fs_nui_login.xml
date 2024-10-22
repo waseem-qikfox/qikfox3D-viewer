@@ -315,9 +315,9 @@
       <combo_box.drop_down_button
         font="SansSerifLarge"/>
       <combo_box.item
-        label="Firestorm"
-        name="Firestorm"
-        value="settings_firestorm.xml" />
+        label="qikfox3D"
+        name="qikfox3D"
+        value="settings_qikfox3D.xml" />
       <combo_box.item
         label="Phoenix"
         name="Phoenix"

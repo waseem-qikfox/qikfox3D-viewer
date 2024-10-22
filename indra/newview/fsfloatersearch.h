@@ -1,9 +1,9 @@
 /**
  * @file fsfloatersearch.h
- * @brief Firestorm search definitions
+ * @brief qikfox3D search definitions
  *
  * $LicenseInfo:firstyear=2012&license=fsviewerlgpl$
- * Phoenix Firestorm Viewer Source Code
+ * Phoenix qikfox3D Viewer Source Code
  * Copyright (C) 2012, Cinder Roxley <cinder.roxley@phoenixviewer.com>
  *
  * This library is free software; you can redistribute it and/or
@@ -20,8 +20,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * The Phoenix Firestorm Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
- * http://www.firestormviewer.org
+ * The Phoenix qikfox3D Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
+ * http://www.qikfox3Dviewer.org
  * $/LicenseInfo$
  */
 

@@ -69,7 +69,7 @@
 #include "rlvui.h"
 // [/RLVa:KB]
 
-// Firestorm includes
+// qikfox3D includes
 #include "exogroupmutelist.h"
 #include "fscommon.h"
 #include "fsdata.h"
@@ -890,7 +890,7 @@ void LLIMProcessing::processNewMessage(LLUUID from_id,
 
                 if (!has_session)
                 {
-                    // <FS:LO> Fire-5389 - "Autoresponse Sent" message added to Firestorm as was in Phoenix
+                    // <FS:LO> Fire-5389 - "Autoresponse Sent" message added to qikfox3D as was in Phoenix
                     LLStringUtil::format_map_t args;
                     args["MESSAGE"] = response;
 

@@ -31,7 +31,7 @@
 #include "llcombobox.h"
 #include "lldir.h"
 #include "llfoldertype.h"
-#include "llinventoryfunctions.h"   // for ROOT_FIRESTORM_FOLDER
+#include "llinventoryfunctions.h"   // for ROOT_qikfox3D_FOLDER
 #include "llinventorytype.h"
 #include "lllineeditor.h"
 #include "llnotificationsutil.h"
@@ -532,13 +532,13 @@ void ParticleEditor::onCopyButtonClicked()
 
 void ParticleEditor::onInjectButtonClicked()
 {
-    // first try to find the #Firestorm folder
-    LLUUID categoryID = gInventory.findCategoryByName(ROOT_FIRESTORM_FOLDER);
+    // first try to find the #qikfox3D folder
+    LLUUID categoryID = gInventory.findCategoryByName(ROOT_qikfox3D_FOLDER);
 
-    // if no #Firestorm folder was found, create one
+    // if no #qikfox3D folder was found, create one
     if (categoryID.isNull())
     {
-        gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_FIRESTORM_FOLDER, [this](const LLUUID& new_cat_id)
+        gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_qikfox3D_FOLDER, [this](const LLUUID& new_cat_id)
             {
                 createScriptInventoryItem(new_cat_id);
             });
@@ -551,7 +551,7 @@ void ParticleEditor::onInjectButtonClicked()
 
 void ParticleEditor::createScriptInventoryItem(LLUUID categoryID)
 {
-    // if still no #Firestorm folder was found, try to find the default "Scripts" folder
+    // if still no #qikfox3D folder was found, try to find the default "Scripts" folder
     if (categoryID.isNull())
     {
         std::string scriptFolderName = LLFolderType::lookup(LLFolderType::FT_LSL_TEXT);

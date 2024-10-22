@@ -31,7 +31,7 @@ Szczegóły błędu: Błąd o nazwie &apos;[_NAME]&apos; nie został odnaleziony
 		<usetemplate name="okcancelbuttons" notext="Anuluj" yestext="Tak"/>
 	</notification>
 	<notification name="BadInstallation">
-		Instalacja [APP_NAME] jest uszkodzona. Proszę [https://www.firestormviewer.org/downloads pobrać nową kopię] przeglądarki i ponownie ją zainstalować.
+		Instalacja [APP_NAME] jest uszkodzona. Proszę [https://www.qikfox3Dviewer.org/downloads pobrać nową kopię] przeglądarki i ponownie ją zainstalować.
 	</notification>
 	<notification name="LoginFailedNoNetwork">
 		Nie można połączyć z [CURRENT_GRID].
@@ -1459,7 +1459,7 @@ Możesz normalnie używać [APP_NAME], inni użytkownicy będą Cię widzieli po
 		Instalacja [APP_NAME] zakończona.
 
 Jeżeli używasz [CURRENT_GRID] po raz pierwszy to musisz stworzyć konto żeby móc się zalogować.
-Czy chcesz przejść na stronę [https://www.firestormviewer.org/join-secondlife/ firestormviewer.org] żeby stworzyć nowe konto?
+Czy chcesz przejść na stronę [https://www.qikfox3Dviewer.org/join-secondlife/ qikfox3Dviewer.org] żeby stworzyć nowe konto?
 		<usetemplate name="okcancelbuttons" notext="Kontynuuj" yestext="Stwórz konto..."/>
 	</notification>
 	<notification name="LoginCantRemoveUsername">
@@ -3647,11 +3647,11 @@ Przycisk zostanie wyświetlony w przypadku dostatecznej ilości przestrzeni.
 	</notification>
 	<notification name="MeshUploadErrorDetails">
 		Nie można przesłać [LABEL]: [MESSAGE]
-[DETAILS] Zobacz Firestorm.log, aby dowiedzieć się więcej.
+[DETAILS] Zobacz qikfox3D.log, aby dowiedzieć się więcej.
 	</notification>
 	<notification name="MeshUploadError">
 		Nie można przesłać [LABEL]: [MESSAGE]
-Zobacz Firestorm.log, aby dowiedzieć się więcej.
+Zobacz qikfox3D.log, aby dowiedzieć się więcej.
 	</notification>
 	<notification name="MeshUploadPermError">
 		Wystąpił błąd podczas pobierania uprawnień przesyłania meszy.
@@ -3752,7 +3752,7 @@ Porty, które muszą być otwarte dla połączeń głosowych, to:
 Proszę sprawdź swoją sieć i ustawienia firewall.
 Wyłącz wszelkie funkcjonalności SIP ALG (Application Layer Gateway) w swoim routerze.
 
-https://wiki.firestormviewer.org/fs_voice
+https://wiki.qikfox3Dviewer.org/fs_voice
 		<usetemplate name="okignore" ignoretext="Ostrzegaj mnie, gdy przeglądarka nie może połączyć się z serwerem głosu" />
 	</notification>
 	<notification name="NoVoiceConnect-GIAB">
@@ -3761,7 +3761,7 @@ https://wiki.firestormviewer.org/fs_voice
 Komunikacja głosowa nie będzie dostępna.
 Proszę sprawdź swoją sieć i ustawienia firewall.
 
-[https://wiki.firestormviewer.org/fs_voice]
+[https://wiki.qikfox3Dviewer.org/fs_voice]
 	</notification>
 	<notification name="AvatarRezLeftNotification">
 		( [EXISTENCE] sekund w Second Life)
@@ -4156,7 +4156,7 @@ Nazwa może zawierać tylko znaki ASCII, za wyjątkiem ":" oraz "|".
 	<notification name="TestversionExpired">
 		Ta wersja testowa programu [APP_NAME] wygasła i nie można jej już dalej używać.
 	</notification>
-	<notification name="FireStormReqInfo">
+	<notification name="qikfox3DReqInfo">
 		[NAME] prosi o wysłanie jej/mu informacji o Twojej instalacji przeglądarki [APP_NAME].
 (To dokładnie to samo, co możesz znaleźć w Pomoc -> Informacje o [APP_NAME])
 [REASON]
@@ -4187,7 +4187,7 @@ Czy chcesz jej/mu wysłać te informacje?
 	<notification name="FlightAssistEnabled">
 		Pomocnik lotu jest włączony
 	</notification>
-	<notification label="Resetuj wszystkie ustawienia" name="FirestormClearSettingsPrompt">
+	<notification label="Resetuj wszystkie ustawienia" name="qikfox3DClearSettingsPrompt">
 		Resetowanie ustawień może się przydać, gdy napotykasz na jakieś problemy - pamiętaj jednak, że trzeba będzie wprowadzić od nowa wszystkie zmiany, jakie zostały przez Ciebie ustawione do tej pory.
 
 Na pewno chcesz zresetować wszystkie ustawienia?
@@ -4271,7 +4271,7 @@ Zobacz FIRE-17710 aby dowiedzieć się więcej.
 		Pamięć podręczna (bufor danych) Twojej Przeglądarki jest pusta. Miej na uwadze, że możesz przez jakiś czas odczuwać obniżoną wydajność i spowolnione doczytywanie obiektów z Szafy.
 	</notification>
 	<notification name="FirstJoinSupportGroup2">
-		Witaj w grupie wsparcia Phoenix/Firestorm!
+		Witaj w grupie wsparcia Phoenix/qikfox3D!
 
 Abyśmy mogli pomóc Ci lepiej zalecamy, aby Twoja Przeglądarka automatycznie prezentowała swoją wersję - będzie ona wyświetlana przed każdą Twoją wypowiedzią na tym czacie grupowym. Informacja te obejmuje aktualną wersję, skórkę, system operacyjny i status RLVa. Osoby z naszej załogi wsparcia będą mogły dać Ci bardziej sensowne porady, jeśli będą znać wersję Twojej Przeglądarki od razu.
 
@@ -4281,7 +4281,7 @@ Chcesz włączyć automatyczne prezentowanie wersji Przeglądarki?
 		<form name="form">
 			<button name="OK_okcancelignore" text="Tak" />
 			<button name="Cancel_okcancelignore" text="Nie" />
-			<ignore name="ignore" text="Dołączenie do grupy wsparcia Phoenix/Firestorm" />
+			<ignore name="ignore" text="Dołączenie do grupy wsparcia Phoenix/qikfox3D" />
 		</form>
 	</notification>
 	<notification name="ConfirmScriptModify">
@@ -5266,8 +5266,8 @@ To ustawienie jest przeznaczone dla przypadków, gdy wykrywanie VRAM zgłasza ni
 	</notification>
 	<notification name="CurrencyURIOverrideReceived">
 		W tym regionie wybrano portal walutowy strony trzeciej.
-Należy pamiętać, że zakupy w walucie dokonywane za pośrednictwem Firestorm Viewer są transakcjami między Tobą (użytkownikiem) a dostawcą (-ami) lub sprzedawcą (-ami) waluty.
-Ani Firestorm Viewer, ani Phoenix Firestorm Viewer Project Inc., ani jego zespół nie ponoszą odpowiedzialności za jakiekolwiek koszty lub szkody wynikające bezpośrednio lub pośrednio z takich transakcji.
+Należy pamiętać, że zakupy w walucie dokonywane za pośrednictwem qikfox3D Viewer są transakcjami między Tobą (użytkownikiem) a dostawcą (-ami) lub sprzedawcą (-ami) waluty.
+Ani qikfox3D Viewer, ani Phoenix qikfox3D Viewer Project Inc., ani jego zespół nie ponoszą odpowiedzialności za jakiekolwiek koszty lub szkody wynikające bezpośrednio lub pośrednio z takich transakcji.
 Jeśli nie zgadzasz się z niniejszymi warunkami użytkowania, nie należy przeprowadzać transakcji finansowych za pomocą tej przeglądarki.
 		<usetemplate ignoretext="Kiedy region ustawia nowego pomocnika walutowego." name="okignore" />
 	</notification>
@@ -5445,8 +5445,8 @@ Pamiętaj, że nie można wybrać "otoczenia współdzielonego" i "bazowanego na
 		Zakończył się zbiorowy import Windlightów.
 	</notification>
 	<notification name="FSAOScriptedNotification">
-		Animator Firestorma: [AO_MESSAGE]
-		<usetemplate ignoretext="Ostrzegaj mnie, gdy Animator Firestorma jest proszony o dostęp przez oskryptowany obiekt" name="notifyignore" />
+		Animator qikfox3Da: [AO_MESSAGE]
+		<usetemplate ignoretext="Ostrzegaj mnie, gdy Animator qikfox3Da jest proszony o dostęp przez oskryptowany obiekt" name="notifyignore" />
 	</notification>
 	<notification name="WarnForceLoginURL">
 		Wygląda na to, że adres URL ekranu logowania jest zastępowany w celach testowych.

@@ -1323,7 +1323,7 @@ bool LLPanelLandObjects::postBuild()
     mOwnerList->sortByColumnIndex(3, false);
     childSetCommitCallback("owner list", onCommitList, this);
     mOwnerList->setDoubleClickCallback(onDoubleClickOwner, this);
-    // <FS:Ansariel> Special Firestorm menu also allowing multi-select action
+    // <FS:Ansariel> Special qikfox3D menu also allowing multi-select action
     //mOwnerList->setContextMenu(LLScrollListCtrl::MENU_AVATAR);
     mOwnerList->setContextMenu(&gFSNameListAvatarMenu);
     // </FS:Ansariel>
@@ -2684,7 +2684,7 @@ bool LLPanelLandAccess::postBuild()
     if (mListAccess)
     {
         mListAccess->sortByColumnIndex(0, true); // ascending
-        // <FS:Ansariel> Special Firestorm menu also allowing multi-select action
+        // <FS:Ansariel> Special qikfox3D menu also allowing multi-select action
         //mListAccess->setContextMenu(LLScrollListCtrl::MENU_AVATAR);
         mListAccess->setContextMenu(&gFSNameListAvatarMenu);
         // </FS:Ansariel>
@@ -2694,7 +2694,7 @@ bool LLPanelLandAccess::postBuild()
     if (mListBanned)
     {
         mListBanned->sortByColumnIndex(0, true); // ascending
-        // <FS:Ansariel> Special Firestorm menu also allowing multi-select action
+        // <FS:Ansariel> Special qikfox3D menu also allowing multi-select action
         //mListBanned->setContextMenu(LLScrollListCtrl::MENU_AVATAR);
         mListBanned->setContextMenu(&gFSNameListAvatarMenu);
         // </FS:Ansariel>

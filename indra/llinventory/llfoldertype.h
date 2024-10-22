@@ -96,7 +96,7 @@ public:
         FT_MATERIAL = 57,
 
         // <FS:Ansariel> Folder types for our own virtual system folders
-        FT_FIRESTORM = 58,
+        FT_qikfox3D = 58,
         FT_PHOENIX = 59,
         FT_RLV = 60,
         // </FS:Ansariel> Folder types for our own virtual system folders

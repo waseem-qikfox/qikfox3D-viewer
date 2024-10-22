@@ -46,7 +46,7 @@
 #include "llviewerwindow.h"
 // </FS:PP>
 
-// Firestorm includes
+// qikfox3D includes
 #include "fsfloaterim.h"
 #include "llagent.h"
 #include "llavataractions.h"
